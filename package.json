@@ -66,6 +66,9 @@
       "jsx",
       "json",
       "node"
+    ],
+    "testMatch": [
+      "<rootDir>/components/**/**/*.test.tsx"
     ]
   }
 }
