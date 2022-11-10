@@ -5,5 +5,7 @@ import {MenuIcon} from './MenuIcon';
 storiesOf('atoms/MenuIcon', module)
   .addDecorator(story => story())
   .add('default', () => (
-    <MenuIcon iconType={require('../../../assets/05_icons_electrical.png')} />
+    <MenuIcon
+      iconType={require('../../../assets/png/05_icons_electrical.png')}
+    />
   ));

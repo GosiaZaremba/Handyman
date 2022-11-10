@@ -5,7 +5,7 @@ import styles from './LogoImage.styles';
 export const LogoImage: React.FC = () => {
   return (
     <Image
-      source={require('../../../assets/01_logo_cut.png')}
+      source={require('../../../assets/png/01_logo_cut.png')}
       style={styles.logo}
     />
   );
