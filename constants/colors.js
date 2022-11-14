@@ -8,8 +8,8 @@ export const Colors = {
     dark: '#ff8e0b',
   },
   grey: {
-    light: '#d9d9d9',
-    divider: '#e5e5e5',
+    divider: '#d9d9d9',
+    light: '#e5e5e5',
   },
   font: {
     green: '#44b35e',
