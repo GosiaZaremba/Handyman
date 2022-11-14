@@ -4,4 +4,4 @@ import {TextLarge} from './TextLarge';
 
 storiesOf('atoms/TextLarge', module)
   .addDecorator(story => story())
-  .add('default', () => <TextLarge text={'Large Text'} />);
+  .add('default', () => <TextLarge text={'Large Text'} fontColor={'#000'} />);

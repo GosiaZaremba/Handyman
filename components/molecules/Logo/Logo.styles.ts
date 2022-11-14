@@ -9,5 +9,6 @@ export default StyleSheet.create({
     backgroundColor: '#ffffff',
     justifyContent: 'center',
     alignItems: 'center',
+    margin: 20,
   },
 });

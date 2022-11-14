@@ -4,4 +4,4 @@ import {TextSmall} from './TextSmall';
 
 storiesOf('atoms/TextSmall', module)
   .addDecorator(story => story())
-  .add('default', () => <TextSmall text={'Small Text'} />);
+  .add('default', () => <TextSmall text={'Small Text'} fontColor={'#000'} />);

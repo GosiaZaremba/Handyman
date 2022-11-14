@@ -4,4 +4,4 @@ import {WelcomeTemplate} from './WelcomeTemplate';
 
 storiesOf('templates/WelcomeTemplate', module)
   .addDecorator(story => story())
-  .add('default', () => <WelcomeTemplate />);
+  .add('default', () => <WelcomeTemplate onPressGetStarted={() => {}} />);

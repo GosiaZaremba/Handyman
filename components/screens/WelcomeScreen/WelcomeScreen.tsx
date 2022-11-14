@@ -1,7 +1,10 @@
 import React from 'react';
-import {ImageBackground, View} from 'react-native';
-import styles from './WelcomeScreen.styles';
+import {WelcomeTemplate} from '../../templates';
 
 export const WelcomeScreen: React.FC = () => {
-  return <View></View>;
+  const onPressGetStarted = () => {
+    console.log('Welcome Screen - get started button');
+  };
+
+  return <WelcomeTemplate onPressGetStarted={onPressGetStarted} />;
 };

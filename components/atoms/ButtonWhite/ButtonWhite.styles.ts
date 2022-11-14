@@ -8,17 +8,18 @@ export default StyleSheet.create({
     height: 45,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: '#fff',
   },
   pressed: {
-    opacity: 0.7,
     borderRadius: 10,
     width: '100%',
     height: 45,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: '#F9F9F9',
   },
   buttonText: {
     color: Colors.font.green,
-    fontFamily: 'OpenSans-Regular',
+    fontFamily: 'OpenSans-Bold',
   },
 });
