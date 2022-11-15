@@ -13,6 +13,6 @@ export const Colors = {
   },
   font: {
     green: '#44b35e',
-    grey: '#a6a6a6',
+    grey: '#9e9e9e',
   },
 };
