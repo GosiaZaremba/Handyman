@@ -1,7 +1,7 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react-native';
 import {Label} from './Label';
-import {boolean, text} from '@storybook/addon-knobs';
+import {text} from '@storybook/addon-knobs';
 
 storiesOf('atoms/Label', module)
   .addDecorator(story => story())

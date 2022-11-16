@@ -9,7 +9,6 @@ import styles from './PasswordInputLabel.styles';
 
 export type Props = {
   labelText: string;
-  placeholder: string;
 };
 
 export type PasswordInputLabelReference = {
@@ -20,7 +19,7 @@ export type PasswordInputLabelReference = {
 export const PasswordInputLabelWithReference: React.ForwardRefRenderFunction<
   PasswordInputLabelReference,
   Props
-> = ({labelText, placeholder}, ref) => {
+> = ({labelText}, ref) => {
   const inputReference = useRef<CustomPasswordInputReference>(null);
 
   useImperativeHandle(ref, () => ({
@@ -35,7 +34,7 @@ export const PasswordInputLabelWithReference: React.ForwardRefRenderFunction<
   return (
     <View style={styles.outerContainer}>
       <Label text={labelText} />
-      <CustomPasswordInput placeholder={placeholder} ref={inputReference} />
+      <CustomPasswordInput ref={inputReference} />
     </View>
   );
 };

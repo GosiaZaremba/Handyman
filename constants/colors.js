@@ -14,5 +14,6 @@ export const Colors = {
   font: {
     green: '#44b35e',
     grey: '#9e9e9e',
+    white: '#fff',
   },
 };

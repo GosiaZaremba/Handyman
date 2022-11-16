@@ -4,7 +4,6 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import styles from './CustomPasswordInput.styles';
 
 export type Props = {
-  placeholder: string;
   testID?: string;
 };
 
@@ -17,10 +16,10 @@ export type CustomPasswordInputReference = {
 const CustomPasswordInputWithReference: React.ForwardRefRenderFunction<
   CustomPasswordInputReference,
   Props
-> = ({placeholder, testID}, ref) => {
+> = ({testID}, ref) => {
   const [value, setValue] = useState<string>('');
   const [passwordIsVisible, setPasswordIsVisible] = useState<boolean>(true);
-  const [passwordIcon, setPasswordIcon] = useState<string>('eye-off-sharp');
+  const [passwordIcon, setPasswordIcon] = useState<string>('eye-sharp');
 
   const inputReference = useRef<TextInput>(null);
 
@@ -49,7 +48,7 @@ const CustomPasswordInputWithReference: React.ForwardRefRenderFunction<
     <View style={styles.inputContainer}>
       <TextInput
         onChangeText={onChangeText}
-        placeholder={placeholder}
+        placeholder={' '}
         secureTextEntry={passwordIsVisible}
         value={value}
         style={styles.input}

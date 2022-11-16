@@ -6,8 +6,5 @@ import {text} from '@storybook/addon-knobs';
 storiesOf('atoms/PasswordInputLabel', module)
   .addDecorator(story => story())
   .add('default', () => (
-    <PasswordInputLabel
-      placeholder={text('placeholder', '')}
-      labelText={text('label text', 'PASSWORD')}
-    />
+    <PasswordInputLabel labelText={text('label text', 'PASSWORD')} />
   ));

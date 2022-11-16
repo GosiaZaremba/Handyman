@@ -2,12 +2,6 @@ import React, {forwardRef, useImperativeHandle, useRef, useState} from 'react';
 import {TextInput, View} from 'react-native';
 import styles from './CustomInput.styles';
 
-export type Props = {
-  placeholder: string;
-  secureTextEntry: boolean;
-  testID?: string;
-};
-
 export type CustomInputReference = {
   getValue: () => string;
   focus: () => void;
@@ -15,9 +9,8 @@ export type CustomInputReference = {
 };
 
 const CustomInputWithReference: React.ForwardRefRenderFunction<
-  CustomInputReference,
-  Props
-> = ({placeholder, secureTextEntry, testID}, ref) => {
+  CustomInputReference
+> = ({}, ref) => {
   const [value, setValue] = useState<string>('');
 
   const inputReference = useRef<TextInput>(null);
@@ -42,12 +35,11 @@ const CustomInputWithReference: React.ForwardRefRenderFunction<
     <View style={styles.inputContainer}>
       <TextInput
         onChangeText={onChangeText}
-        placeholder={placeholder}
-        secureTextEntry={secureTextEntry}
+        placeholder={' '}
+        secureTextEntry={false}
         value={value}
         style={styles.input}
         ref={inputReference}
-        testID={testID}
       />
     </View>
   );

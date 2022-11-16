@@ -5,10 +5,4 @@ import {boolean, text} from '@storybook/addon-knobs';
 
 storiesOf('molecules/InputLabel', module)
   .addDecorator(story => story())
-  .add('default', () => (
-    <InputLabel
-      labelText={text('label', 'USER NAME')}
-      secureTextEntry={boolean('secureTextEntry', true)}
-      placeholder={text('placeholder', '')}
-    />
-  ));
+  .add('default', () => <InputLabel labelText={text('label', 'USER NAME')} />);

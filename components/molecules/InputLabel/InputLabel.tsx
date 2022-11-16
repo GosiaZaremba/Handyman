@@ -5,19 +5,17 @@ import styles from './InputLabel.styles';
 
 export type Props = {
   labelText: string;
-  placeholder: string;
-  secureTextEntry: boolean;
 };
 
-export type CustomInputLabelReference = {
+export type InputLabelReference = {
   getValue: () => string;
   focus: () => void;
 };
 
 export const InputLabelWithReference: React.ForwardRefRenderFunction<
-  CustomInputLabelReference,
+  InputLabelReference,
   Props
-> = ({labelText, placeholder, secureTextEntry}, ref) => {
+> = ({labelText}, ref) => {
   const inputReference = useRef<CustomInputReference>(null);
 
   useImperativeHandle(ref, () => ({
@@ -32,11 +30,7 @@ export const InputLabelWithReference: React.ForwardRefRenderFunction<
   return (
     <View style={styles.outerContainer}>
       <Label text={labelText} />
-      <CustomInput
-        placeholder={placeholder}
-        secureTextEntry={secureTextEntry}
-        ref={inputReference}
-      />
+      <CustomInput ref={inputReference} />
     </View>
   );
 };
