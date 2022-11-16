@@ -1,10 +1,10 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react-native';
-import {WelcomeTemplate} from './WelcomeTemplate';
+import {SignInForm} from './SignInForm';
 import {action} from '@storybook/addon-actions';
 
-storiesOf('templates/WelcomeTemplate', module)
+storiesOf('organisms/SignInForm', module)
   .addDecorator(story => story())
   .add('default', () => (
-    <WelcomeTemplate onPressGetStarted={action('WelcomeTemplate ckick')} />
+    <SignInForm onPressSignIn={action('Form Sign In click')} />
   ));

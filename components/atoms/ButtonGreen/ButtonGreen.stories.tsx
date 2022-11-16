@@ -1,14 +1,14 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react-native';
-import {ButtonWhite} from './ButtonWhite';
-import {action} from '@storybook/addon-actions';
+import {ButtonGreen} from './ButtonGreen';
 import {text} from '@storybook/addon-knobs';
+import {action} from '@storybook/addon-actions';
 
-storiesOf('atoms/ButtonWhite', module)
+storiesOf('atoms/ButtonGreen', module)
   .addDecorator(story => story())
   .add('default', () => (
-    <ButtonWhite
+    <ButtonGreen
       buttonText={text('button text', 'Button')}
-      onPress={action('white button click')}
+      onPress={action('green button click')}
     />
   ));
