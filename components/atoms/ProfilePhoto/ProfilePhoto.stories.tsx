@@ -5,5 +5,5 @@ import {ProfilePhoto} from './ProfilePhoto';
 storiesOf('atoms/ProfilePhoto', module)
   .addDecorator(story => story())
   .add('default', () => (
-    <ProfilePhoto photoUrl={require('../../../assets/jpg/3.jpg')} />
+    <ProfilePhoto photoUrl={require('../../../assets/jpg/profile_photo.jpg')} />
   ));

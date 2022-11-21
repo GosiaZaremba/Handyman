@@ -17,12 +17,14 @@ export const SignInTemplate: React.FC<Props> = ({
 }) => {
   return (
     <ImageBackground
+      style={styles.background}
       source={require('../../../assets/png/02_Login.png')}
-      resizeMode={'cover'}
-      style={styles.background}>
-      <SignInTop />
+      resizeMode={'cover'}>
       <View style={styles.profilePhoto}>
-        <ProfilePhoto photoUrl={require('../../../assets/jpg/3.jpg')} />
+        <SignInTop />
+        <ProfilePhoto
+          photoUrl={require('../../../assets/jpg/profile_photo.jpg')}
+        />
       </View>
       <SignInForm
         onPressSignIn={onPressSignIn}
