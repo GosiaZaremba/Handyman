@@ -10,6 +10,8 @@ export {ButtonGreen} from './ButtonGreen/ButtonGreen';
 export {Link} from './Link/Link';
 export {ProfilePhoto} from './ProfilePhoto/ProfilePhoto';
 export {TextMedium} from './TextMedium/TextMedium';
+export {AddAccountButton} from './AddAccountButton/AddAccountButton';
+export {SocialIcon} from './SocialIcon/SocialIcon';
 
 export {CustomInputReference} from './CustomInput/CustomInput';
 export {CustomPasswordInputReference} from './CustomPasswordInput/CustomPasswordInput';

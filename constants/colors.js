@@ -16,4 +16,9 @@ export const Colors = {
     grey: '#9e9e9e',
     white: '#fff',
   },
+  icons: {
+    facebook: '#3b5998',
+    twitter: '#26a6d1',
+    google: '#dd4b39',
+  },
 };
