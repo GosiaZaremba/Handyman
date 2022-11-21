@@ -2,7 +2,10 @@ import {StyleSheet} from 'react-native';
 import {Colors} from '../../../constants/colors';
 
 export default StyleSheet.create({
-  input: {fontFamily: 'OpenSans-Regular'},
+  input: {
+    fontFamily: 'OpenSans-Regular',
+    width: '95%',
+  },
   inputContainer: {
     width: '100%',
     borderBottomColor: Colors.grey.divider,

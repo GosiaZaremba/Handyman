@@ -7,5 +7,9 @@ export type Props = {
 };
 
 export const ProfilePhoto: React.FC<Props> = ({photoUrl}) => {
-  return <Image source={photoUrl} style={styles.image}></Image>;
+  return (
+    <View style={styles.imageContainer}>
+      <Image source={photoUrl} style={styles.image}></Image>
+    </View>
+  );
 };

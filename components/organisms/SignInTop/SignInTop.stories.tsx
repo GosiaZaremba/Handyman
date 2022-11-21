@@ -4,6 +4,4 @@ import {SignInTop} from './SignInTop';
 
 storiesOf('organisms/SignInTop', module)
   .addDecorator(story => story())
-  .add('default', () => (
-    <SignInTop photoUrl={require('../../../assets/jpg/3.jpg')} />
-  ));
+  .add('default', () => <SignInTop />);
