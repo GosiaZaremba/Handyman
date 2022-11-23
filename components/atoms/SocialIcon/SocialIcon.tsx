@@ -1,5 +1,5 @@
 import React from 'react';
-import {Pressable} from 'react-native';
+import {Pressable, View} from 'react-native';
 import FontAwesome5Icon from 'react-native-vector-icons/FontAwesome5';
 import styles from './SocialIcon.styles';
 
@@ -13,7 +13,8 @@ export const SocialIcon: React.FC<Props> = ({onPress, iconName, iconColor}) => {
   return (
     <Pressable
       style={({pressed}) => (pressed ? styles.pressed : styles.pressable)}
-      onPress={onPress}>
+      onPress={onPress}
+      hitSlop={5}>
       <FontAwesome5Icon
         name={iconName}
         style={[styles.icon, {color: iconColor}]}

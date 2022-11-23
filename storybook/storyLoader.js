@@ -24,9 +24,12 @@ function loadStories() {
   require('../components/molecules/ProfilePhotoWithButton/ProfilePhotoWithButton.stories');
   require('../components/organisms/SignInForm/SignInForm.stories');
   require('../components/organisms/SignInTop/SignInTop.stories');
+  require('../components/organisms/SignUpForm/SignUpForm.stories');
+  require('../components/organisms/SocialSignUp/SocialSignUp.stories');
   require('../components/screens/SignInScreen/SignInScreen.stories');
   require('../components/screens/WelcomeScreen/WelcomeScreen.stories');
   require('../components/templates/SignInTemplate/SignInTemplate.stories');
+  require('../components/templates/SignUpTemplate/SignUpTemplate.stories');
   require('../components/templates/WelcomeTemplate/WelcomeTemplate.stories');
 }
 
@@ -51,9 +54,12 @@ const stories = [
   '../components/molecules/ProfilePhotoWithButton/ProfilePhotoWithButton.stories',
   '../components/organisms/SignInForm/SignInForm.stories',
   '../components/organisms/SignInTop/SignInTop.stories',
+  '../components/organisms/SignUpForm/SignUpForm.stories',
+  '../components/organisms/SocialSignUp/SocialSignUp.stories',
   '../components/screens/SignInScreen/SignInScreen.stories',
   '../components/screens/WelcomeScreen/WelcomeScreen.stories',
   '../components/templates/SignInTemplate/SignInTemplate.stories',
+  '../components/templates/SignUpTemplate/SignUpTemplate.stories',
   '../components/templates/WelcomeTemplate/WelcomeTemplate.stories',
 ];
 

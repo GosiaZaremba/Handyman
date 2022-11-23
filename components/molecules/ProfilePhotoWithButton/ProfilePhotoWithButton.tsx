@@ -13,7 +13,7 @@ export const ProfilePhotoWithButton: React.FC<Props> = ({
   photoUrl,
 }) => {
   return (
-    <View style={styles.outerContainer}>
+    <View style={styles.container}>
       <ProfilePhoto photoUrl={photoUrl} />
       <AddAccountButton onPress={onPress} />
     </View>

@@ -11,4 +11,12 @@ export default StyleSheet.create({
     justifyContent: 'flex-end',
     height: '30%',
   },
+  formContainer: {
+    flex: 1,
+  },
+  footer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });
