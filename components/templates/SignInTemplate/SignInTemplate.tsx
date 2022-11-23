@@ -8,12 +8,14 @@ export type Props = {
   onPressSignIn: (email?: string, password?: string) => void;
   onPressForgotPassword: () => void;
   onPressSignUp: () => void;
+  photo: string;
 };
 
 export const SignInTemplate: React.FC<Props> = ({
   onPressSignIn,
   onPressForgotPassword,
   onPressSignUp,
+  photo,
 }) => {
   return (
     <ImageBackground
@@ -22,9 +24,7 @@ export const SignInTemplate: React.FC<Props> = ({
       resizeMode={'cover'}>
       <View style={styles.profilePhoto}>
         <SignInTop welcomeText={'Welcome back!'} />
-        <ProfilePhoto
-          photoUrl={require('../../../assets/jpg/profile_photo.jpg')}
-        />
+        <ProfilePhoto photoUrl={photo} />
       </View>
       <SignInForm
         onPressSignIn={onPressSignIn}
