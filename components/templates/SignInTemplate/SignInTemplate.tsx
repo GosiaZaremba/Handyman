@@ -21,7 +21,7 @@ export const SignInTemplate: React.FC<Props> = ({
       source={require('../../../assets/png/02_Login.png')}
       resizeMode={'cover'}>
       <View style={styles.profilePhoto}>
-        <SignInTop />
+        <SignInTop welcomeText={'Welcome back!'} />
         <ProfilePhoto
           photoUrl={require('../../../assets/jpg/profile_photo.jpg')}
         />

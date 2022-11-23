@@ -1,13 +1,10 @@
 import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
-  backgroundImage: {
+  container: {
     width: '100%',
     height: '30%',
     justifyContent: 'center',
     alignItems: 'center',
-  },
-  photoContainer: {
-    marginTop: 15,
   },
 });

@@ -1,8 +1,8 @@
 import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
-  input: {fontFamily: 'OpenSans-Bold'},
-  inputContainer: {
-    width: '100%',
+  container: {
+    width: 105,
+    height: 105,
   },
 });

@@ -3,13 +3,11 @@ import {Colors} from '../../../constants/colors';
 
 export default StyleSheet.create({
   input: {
-    fontFamily: 'OpenSans-Regular',
+    fontFamily: 'OpenSans-Bold',
     width: '95%',
   },
   inputContainer: {
     width: '100%',
-    borderBottomColor: Colors.grey.divider,
-    borderBottomWidth: 1,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
