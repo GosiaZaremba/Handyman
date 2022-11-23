@@ -13,6 +13,7 @@ export type Props = {
   onPressTwitter: () => void;
   onPressGoogle: () => void;
   onPressGoToSignIn: () => void;
+  photo: string;
 };
 
 export const SignUpTemplate: React.FC<Props> = ({
@@ -22,6 +23,7 @@ export const SignUpTemplate: React.FC<Props> = ({
   onPressTwitter,
   onPressGoogle,
   onPressGoToSignIn,
+  photo,
 }) => {
   return (
     <ImageBackground
@@ -30,10 +32,7 @@ export const SignUpTemplate: React.FC<Props> = ({
       resizeMode={'cover'}>
       <View style={styles.profilePhoto}>
         <SignInTop welcomeText={'Sign up to get started.'} />
-        <ProfilePhotoWithButton
-          photoUrl={require('../../../assets/jpg/profile_photo.jpg')}
-          onPress={onPressAddPhoto}
-        />
+        <ProfilePhotoWithButton photoUrl={photo} onPress={onPressAddPhoto} />
       </View>
       <View style={styles.formContainer}>
         <SignUpForm onPressSignUp={onPressSignUp} />

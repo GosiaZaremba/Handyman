@@ -1,7 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {SignInTemplate} from '../../templates';
 
 export const SignInScreen: React.FC = () => {
+  const [photo, setPhoto] = useState<any>(
+    require('../../../assets/jpg/profile_photo.jpg'),
+  );
   const onPressSignIn = (email?: string, password?: string) => {
     console.log('SignInScreen', email, password);
   };
@@ -17,6 +20,7 @@ export const SignInScreen: React.FC = () => {
       onPressSignIn={onPressSignIn}
       onPressForgotPassword={onPressForgotPassword}
       onPressSignUp={onPressSignUp}
+      photo={photo}
     />
   );
 };
