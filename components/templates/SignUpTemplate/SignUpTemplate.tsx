@@ -8,32 +8,24 @@ import styles from './SignUpTemplate.styles';
 
 export type Props = {
   onPressSignUp: (email?: string, password?: string) => void;
-  onPressAddPhoto: () => void;
   onPressFacebook: () => void;
   onPressTwitter: () => void;
   onPressGoogle: () => void;
   onPressGoToSignIn: () => void;
-  photo: string;
 };
 
 export const SignUpTemplate: React.FC<Props> = ({
-  onPressAddPhoto,
   onPressSignUp,
   onPressFacebook,
   onPressTwitter,
   onPressGoogle,
   onPressGoToSignIn,
-  photo,
 }) => {
   return (
     <ImageBackground
       style={styles.background}
       source={require('../../../assets/png/02_Login.png')}
       resizeMode={'cover'}>
-      <View style={styles.profilePhoto}>
-        <SignInTop welcomeText={'Sign up to get started.'} />
-        <ProfilePhotoWithButton photoUrl={photo} onPress={onPressAddPhoto} />
-      </View>
       <View style={styles.formContainer}>
         <SignUpForm onPressSignUp={onPressSignUp} />
       </View>
