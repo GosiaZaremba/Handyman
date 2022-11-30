@@ -5,3 +5,4 @@ export {ProfilePhotoWithButton} from './ProfilePhotoWithButton/ProfilePhotoWithB
 
 export {PasswordInputLabelReference} from './PasswordInputLabel/PasswordInputLabel';
 export {InputLabelReference} from './InputLabel/InputLabel';
+export {ProfilePhotoWithButtonReference} from './ProfilePhotoWithButton/ProfilePhotoWithButton';

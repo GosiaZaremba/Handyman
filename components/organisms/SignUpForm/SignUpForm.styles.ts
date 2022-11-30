@@ -8,4 +8,10 @@ export default StyleSheet.create({
     justifyContent: 'space-evenly',
   },
   bottomTextContainer: {flexDirection: 'row', alignItems: 'baseline'},
+  profilePhoto: {
+    marginHorizontal: 'auto',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+    height: '35%',
+  },
 });
