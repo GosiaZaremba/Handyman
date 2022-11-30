@@ -8,7 +8,6 @@ storiesOf('templates/SignUpTemplate', module)
   .add('default', () => (
     <SignUpTemplate
       onPressSignUp={action('Signing up')}
-      onPressAddAccount={action('Add an account')}
       onPressFacebook={action('Signing in with Facebook')}
       onPressTwitter={action('Signing in with Twitter')}
       onPressGoogle={action('Signing in with Google')}
