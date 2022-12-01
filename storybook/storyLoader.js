@@ -5,6 +5,7 @@
 
 function loadStories() {
   require('../components/atoms/AddPhotoButton/AddPhotoButton.stories');
+  require('../components/atoms/ButtonCategory/ButtonCategory.stories');
   require('../components/atoms/ButtonGreen/ButtonGreen.stories');
   require('../components/atoms/ButtonWhite/ButtonWhite.stories');
   require('../components/atoms/CustomInput/CustomInput.stories');
@@ -22,6 +23,7 @@ function loadStories() {
   require('../components/molecules/Logo/Logo.stories');
   require('../components/molecules/PasswordInputLabel/PasswordInputLabel.stories');
   require('../components/molecules/ProfilePhotoWithButton/ProfilePhotoWithButton.stories');
+  require('../components/organisms/CategoryMenu/CategoryMenu.stories');
   require('../components/organisms/SignInForm/SignInForm.stories');
   require('../components/organisms/SignInTop/SignInTop.stories');
   require('../components/organisms/SignUpForm/SignUpForm.stories');
@@ -29,6 +31,7 @@ function loadStories() {
   require('../components/screens/SignInScreen/SignInScreen.stories');
   require('../components/screens/SignUpScreen/SignUpScreen.stories');
   require('../components/screens/WelcomeScreen/WelcomeScreen.stories');
+  require('../components/templates/PickAHandymanTemplate/PickAHandymanTemplate.stories');
   require('../components/templates/SignInTemplate/SignInTemplate.stories');
   require('../components/templates/SignUpTemplate/SignUpTemplate.stories');
   require('../components/templates/WelcomeTemplate/WelcomeTemplate.stories');
@@ -36,6 +39,7 @@ function loadStories() {
 
 const stories = [
   '../components/atoms/AddPhotoButton/AddPhotoButton.stories',
+  '../components/atoms/ButtonCategory/ButtonCategory.stories',
   '../components/atoms/ButtonGreen/ButtonGreen.stories',
   '../components/atoms/ButtonWhite/ButtonWhite.stories',
   '../components/atoms/CustomInput/CustomInput.stories',
@@ -53,6 +57,7 @@ const stories = [
   '../components/molecules/Logo/Logo.stories',
   '../components/molecules/PasswordInputLabel/PasswordInputLabel.stories',
   '../components/molecules/ProfilePhotoWithButton/ProfilePhotoWithButton.stories',
+  '../components/organisms/CategoryMenu/CategoryMenu.stories',
   '../components/organisms/SignInForm/SignInForm.stories',
   '../components/organisms/SignInTop/SignInTop.stories',
   '../components/organisms/SignUpForm/SignUpForm.stories',
@@ -60,6 +65,7 @@ const stories = [
   '../components/screens/SignInScreen/SignInScreen.stories',
   '../components/screens/SignUpScreen/SignUpScreen.stories',
   '../components/screens/WelcomeScreen/WelcomeScreen.stories',
+  '../components/templates/PickAHandymanTemplate/PickAHandymanTemplate.stories',
   '../components/templates/SignInTemplate/SignInTemplate.stories',
   '../components/templates/SignUpTemplate/SignUpTemplate.stories',
   '../components/templates/WelcomeTemplate/WelcomeTemplate.stories',

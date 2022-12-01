@@ -1,6 +1,5 @@
 import React, {forwardRef, useImperativeHandle, useState} from 'react';
 import {Pressable} from 'react-native';
-import ImageCropPicker from 'react-native-image-crop-picker';
 import Icon from 'react-native-vector-icons/AntDesign';
 import styles from './AddPhotoButton.styles';
 

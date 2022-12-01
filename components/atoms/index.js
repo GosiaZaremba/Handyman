@@ -12,6 +12,7 @@ export {ProfilePhoto} from './ProfilePhoto/ProfilePhoto';
 export {TextMedium} from './TextMedium/TextMedium';
 export {AddPhotoButton} from './AddPhotoButton/AddPhotoButton';
 export {SocialIcon} from './SocialIcon/SocialIcon';
+export {ButtonCategory} from './ButtonCategory/ButtonCategory';
 
 export {CustomInputReference} from './CustomInput/CustomInput';
 export {CustomPasswordInputReference} from './CustomPasswordInput/CustomPasswordInput';

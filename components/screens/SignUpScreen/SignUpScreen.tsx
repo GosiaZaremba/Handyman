@@ -42,12 +42,10 @@ export const SignUpScreen: React.FC = () => {
   return (
     <SignUpTemplate
       onPressSignUp={onPressSignUp}
-      onPressAddPhoto={onPressAddPhoto}
       onPressFacebook={onPressFacebook}
       onPressTwitter={onPressTwitter}
       onPressGoogle={onPressGoogle}
       onPressGoToSignIn={onPressGoToSignIn}
-      photo={photo}
     />
   );
 };
