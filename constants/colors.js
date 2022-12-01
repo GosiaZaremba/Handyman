@@ -21,4 +21,5 @@ export const Colors = {
     twitter: '#26a6d1',
     google: '#dd4b39',
   },
+  icon: '#00b875',
 };

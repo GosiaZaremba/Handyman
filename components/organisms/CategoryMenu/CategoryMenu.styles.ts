@@ -2,11 +2,11 @@ import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
   container: {
-    borderWidth: 1,
-    borderColor: 'green',
+    flex: 1,
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'space-evenly',
     alignContent: 'stretch',
+    padding: 30,
   },
 });
