@@ -7,13 +7,13 @@ function loadStories() {
   require('../components/atoms/AddPhotoButton/AddPhotoButton.stories');
   require('../components/atoms/ButtonCategory/ButtonCategory.stories');
   require('../components/atoms/ButtonGreen/ButtonGreen.stories');
+  require('../components/atoms/ButtonGreenIcon/ButtonGreenIcon.stories');
   require('../components/atoms/ButtonWhite/ButtonWhite.stories');
   require('../components/atoms/CustomInput/CustomInput.stories');
   require('../components/atoms/CustomPasswordInput/CustomPasswordInput.stories');
   require('../components/atoms/Label/Label.stories');
   require('../components/atoms/Link/Link.stories');
   require('../components/atoms/LogoImage/LogoImage.stories');
-  require('../components/atoms/MenuIcon/MenuIcon.stories');
   require('../components/atoms/ProfilePhoto/ProfilePhoto.stories');
   require('../components/atoms/SocialIcon/SocialIcon.stories');
   require('../components/atoms/TextLarge/TextLarge.stories');
@@ -41,13 +41,13 @@ const stories = [
   '../components/atoms/AddPhotoButton/AddPhotoButton.stories',
   '../components/atoms/ButtonCategory/ButtonCategory.stories',
   '../components/atoms/ButtonGreen/ButtonGreen.stories',
+  '../components/atoms/ButtonGreenIcon/ButtonGreenIcon.stories',
   '../components/atoms/ButtonWhite/ButtonWhite.stories',
   '../components/atoms/CustomInput/CustomInput.stories',
   '../components/atoms/CustomPasswordInput/CustomPasswordInput.stories',
   '../components/atoms/Label/Label.stories',
   '../components/atoms/Link/Link.stories',
   '../components/atoms/LogoImage/LogoImage.stories',
-  '../components/atoms/MenuIcon/MenuIcon.stories',
   '../components/atoms/ProfilePhoto/ProfilePhoto.stories',
   '../components/atoms/SocialIcon/SocialIcon.stories',
   '../components/atoms/TextLarge/TextLarge.stories',

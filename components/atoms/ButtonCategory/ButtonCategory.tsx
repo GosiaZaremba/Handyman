@@ -6,15 +6,16 @@ import Icon from 'react-native-vector-icons/AntDesign';
 
 export type Props = {
   // onPress: () => void;
-  categoryIcon: any;
+  category: any;
   text: string;
 };
 
-export const ButtonCategory: React.FC<Props> = ({categoryIcon, text}) => {
-  const [pressedIn, setPressedIn] = useState(false);
+export const ButtonCategory: React.FC<Props> = ({category, text}) => {
+  const [pressedIn, setPressedIn] = useState<boolean>(false);
 
   const onPressIn = () => {
     setPressedIn(pressedIn => !pressedIn);
+    console.log('click');
   };
 
   return (
@@ -29,7 +30,7 @@ export const ButtonCategory: React.FC<Props> = ({categoryIcon, text}) => {
             style={pressedIn ? styles.icon : styles.iconHidden}
           />
         </View>
-        <Image source={categoryIcon} style={styles.image} />
+        <Image source={category} style={styles.image} />
         <TextSmall text={text} fontColor={'black'} />
       </Pressable>
     </View>

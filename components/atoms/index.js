@@ -1,4 +1,3 @@
-export {MenuIcon} from './MenuIcon/MenuIcon';
 export {LogoImage} from './LogoImage/LogoImage';
 export {TextLarge} from './TextLarge/TextLarge';
 export {TextSmall} from './TextSmall/TextSmall';
@@ -13,6 +12,7 @@ export {TextMedium} from './TextMedium/TextMedium';
 export {AddPhotoButton} from './AddPhotoButton/AddPhotoButton';
 export {SocialIcon} from './SocialIcon/SocialIcon';
 export {ButtonCategory} from './ButtonCategory/ButtonCategory';
+export {ButtonGreenIcon} from './ButtonGreenIcon/ButtonGreenIcon';
 
 export {CustomInputReference} from './CustomInput/CustomInput';
 export {CustomPasswordInputReference} from './CustomPasswordInput/CustomPasswordInput';

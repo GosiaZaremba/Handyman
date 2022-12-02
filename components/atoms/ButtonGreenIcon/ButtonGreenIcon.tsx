@@ -1,15 +1,21 @@
 import React from 'react';
 import {Pressable, Text} from 'react-native';
-import styles from './ButtonGreen.styles';
+import styles from './ButtonGreenIcon.styles';
 import LinearGradient from 'react-native-linear-gradient';
 import {Colors} from '../../../constants/colors';
+import Icon from 'react-native-vector-icons/AntDesign';
 
 export type Props = {
   buttonText: string;
   onPress: () => void;
+  iconName: string;
 };
 
-export const ButtonGreen: React.FC<Props> = ({buttonText, onPress}) => {
+export const ButtonGreenIcon: React.FC<Props> = ({
+  buttonText,
+  onPress,
+  iconName,
+}) => {
   return (
     <LinearGradient
       colors={[Colors.button.light, Colors.button.dark]}
@@ -20,6 +26,7 @@ export const ButtonGreen: React.FC<Props> = ({buttonText, onPress}) => {
         style={({pressed}) => (pressed ? styles.pressed : styles.pressable)}
         onPress={onPress}>
         <Text style={styles.buttonText}>{buttonText}</Text>
+        <Icon name={iconName} style={styles.icon} />
       </Pressable>
     </LinearGradient>
   );

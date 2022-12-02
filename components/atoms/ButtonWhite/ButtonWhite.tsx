@@ -1,5 +1,5 @@
 import React from 'react';
-import {Pressable, Text} from 'react-native';
+import {Pressable, Text, View} from 'react-native';
 import styles from './ButtonWhite.styles';
 
 export type Props = {
@@ -9,10 +9,12 @@ export type Props = {
 
 export const ButtonWhite: React.FC<Props> = ({buttonText, onPress}) => {
   return (
-    <Pressable
-      style={({pressed}) => (pressed ? styles.pressed : styles.pressable)}
-      onPress={onPress}>
-      <Text style={styles.buttonText}>{buttonText}</Text>
-    </Pressable>
+    <View style={styles.container}>
+      <Pressable
+        style={({pressed}) => (pressed ? styles.pressed : styles.pressable)}
+        onPress={onPress}>
+        <Text style={styles.buttonText}>{buttonText}</Text>
+      </Pressable>
+    </View>
   );
 };
