@@ -3,8 +3,8 @@ import {Colors} from '../../../constants/colors';
 
 export default StyleSheet.create({
   container: {
-    width: 110,
-    height: 90,
+    width: 120,
+    height: 95,
     borderRadius: 10,
     justifyContent: 'center',
     alignItems: 'center',
@@ -12,8 +12,8 @@ export default StyleSheet.create({
     elevation: 8,
   },
   pressed: {
-    width: 110,
-    height: 90,
+    width: 120,
+    height: 95,
     borderRadius: 10,
     justifyContent: 'center',
     alignItems: 'center',
@@ -22,9 +22,6 @@ export default StyleSheet.create({
     borderColor: Colors.icon,
   },
   pressable: {
-    width: 110,
-    height: 90,
-    borderRadius: 10,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: Colors.font.white,
