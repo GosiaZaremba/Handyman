@@ -9,16 +9,22 @@ function loadStories() {
   require('../components/atoms/ButtonGreen/ButtonGreen.stories');
   require('../components/atoms/ButtonGreenIcon/ButtonGreenIcon.stories');
   require('../components/atoms/ButtonWhite/ButtonWhite.stories');
+  require('../components/atoms/CardGrey/CardGrey.stories');
   require('../components/atoms/CustomInput/CustomInput.stories');
   require('../components/atoms/CustomPasswordInput/CustomPasswordInput.stories');
+  require('../components/atoms/Divider/Divider.stories');
+  require('../components/atoms/FAIcon/FAIcon.stories');
   require('../components/atoms/Label/Label.stories');
   require('../components/atoms/Link/Link.stories');
   require('../components/atoms/LogoImage/LogoImage.stories');
+  require('../components/atoms/PressableCard/PressableCard.stories');
   require('../components/atoms/ProfilePhoto/ProfilePhoto.stories');
   require('../components/atoms/SocialIcon/SocialIcon.stories');
   require('../components/atoms/TextLarge/TextLarge.stories');
   require('../components/atoms/TextMedium/TextMedium.stories');
   require('../components/atoms/TextSmall/TextSmall.stories');
+  require('../components/molecules/CategoryCard/CategoryCard.stories');
+  require('../components/molecules/DollarIcon/DollarIcon.stories');
   require('../components/molecules/InputLabel/InputLabel.stories');
   require('../components/molecules/Logo/Logo.stories');
   require('../components/molecules/PasswordInputLabel/PasswordInputLabel.stories');
@@ -43,16 +49,22 @@ const stories = [
   '../components/atoms/ButtonGreen/ButtonGreen.stories',
   '../components/atoms/ButtonGreenIcon/ButtonGreenIcon.stories',
   '../components/atoms/ButtonWhite/ButtonWhite.stories',
+  '../components/atoms/CardGrey/CardGrey.stories',
   '../components/atoms/CustomInput/CustomInput.stories',
   '../components/atoms/CustomPasswordInput/CustomPasswordInput.stories',
+  '../components/atoms/Divider/Divider.stories',
+  '../components/atoms/FAIcon/FAIcon.stories',
   '../components/atoms/Label/Label.stories',
   '../components/atoms/Link/Link.stories',
   '../components/atoms/LogoImage/LogoImage.stories',
+  '../components/atoms/PressableCard/PressableCard.stories',
   '../components/atoms/ProfilePhoto/ProfilePhoto.stories',
   '../components/atoms/SocialIcon/SocialIcon.stories',
   '../components/atoms/TextLarge/TextLarge.stories',
   '../components/atoms/TextMedium/TextMedium.stories',
   '../components/atoms/TextSmall/TextSmall.stories',
+  '../components/molecules/CategoryCard/CategoryCard.stories',
+  '../components/molecules/DollarIcon/DollarIcon.stories',
   '../components/molecules/InputLabel/InputLabel.stories',
   '../components/molecules/Logo/Logo.stories',
   '../components/molecules/PasswordInputLabel/PasswordInputLabel.stories',
