@@ -18,6 +18,8 @@ export {FAIcon} from './FAIcon/FAIcon';
 export {PressableCard} from './PressableCard/PressableCard';
 export {CardGold} from './CardGold/CardGold';
 export {Divider} from './Divider/Divider';
+export {CardWhite} from './CardWhite/CardWhite';
+export {HandymanProfilePhoto} from './HandymanProfilePhoto/HandymanProfilePhoto';
 
 export {CustomInputReference} from './CustomInput/CustomInput';
 export {CustomPasswordInputReference} from './CustomPasswordInput/CustomPasswordInput';

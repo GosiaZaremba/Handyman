@@ -7,6 +7,7 @@
     numberOfReviews: 53,
     starRating: 5,
     photo: '',
+    isOnline: true,
   },
   {
     name: 'Elvis Presley',
@@ -16,6 +17,7 @@
     numberOfReviews: 37,
     starRating: 4,
     photo: '',
+    isOnline: false,
   },
   {
     name: 'Jackie Wilson',
@@ -25,6 +27,7 @@
     numberOfReviews: 24,
     starRating: 5,
     photo: '',
+    isOnline: true,
   },
   {
     name: 'John Lennon',
@@ -34,6 +37,7 @@
     numberOfReviews: 11,
     starRating: 4,
     photo: '',
+    isOnline: false,
   },
   {
     name: 'Mary Griffin',
@@ -43,6 +47,7 @@
     numberOfReviews: 36,
     starRating: 5,
     photo: '',
+    isOnline: true,
   },
   {
     name: 'Triss Merigold',
@@ -52,6 +57,7 @@
     numberOfReviews: 5,
     starRating: 5,
     photo: '',
+    isOnline: false,
   },
 
   {
@@ -62,6 +68,7 @@
     numberOfReviews: 36,
     starRating: 5,
     photo: '',
+    isOnline: true,
   },
 
   {
@@ -72,6 +79,7 @@
     numberOfReviews: 15,
     starRating: 5,
     photo: '',
+    isOnline: false,
   },
   {
     name: 'Leo Bonhart',
@@ -81,6 +89,7 @@
     numberOfReviews: 12,
     starRating: 3,
     photo: '',
+    isOnline: true,
   },
   {
     name: 'Tissaia de Vries',
@@ -90,6 +99,7 @@
     numberOfReviews: 5,
     starRating: 5,
     photo: '',
+    isOnline: false,
   },
   {
     name: 'Isengrim Faoiltiarna',
@@ -99,6 +109,7 @@
     numberOfReviews: 5,
     starRating: 5,
     photo: '',
+    isOnline: true,
   },
   {
     name: 'Boreas Mun',
@@ -108,6 +119,7 @@
     numberOfReviews: 5,
     starRating: 5,
     photo: '',
+    isOnline: false,
   },
   {
     name: 'Menno Coehoorn',
@@ -117,5 +129,6 @@
     numberOfReviews: 5,
     starRating: 5,
     photo: '',
+    isOnline: true,
   },
 ];
