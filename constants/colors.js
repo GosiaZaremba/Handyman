@@ -15,6 +15,7 @@ export const Colors = {
     green: '#44b35e',
     grey: '#9e9e9e',
     white: '#fff',
+    darkGrey: '#515050',
   },
   icons: {
     facebook: '#3b5998',
@@ -22,4 +23,8 @@ export const Colors = {
     google: '#dd4b39',
   },
   icon: '#00b875',
+  star: {
+    grey: '#e1e1e1',
+    gold: '#ffaa63',
+  },
 };

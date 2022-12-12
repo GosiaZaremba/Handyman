@@ -13,6 +13,13 @@ export {AddPhotoButton} from './AddPhotoButton/AddPhotoButton';
 export {SocialIcon} from './SocialIcon/SocialIcon';
 export {ButtonCategory} from './ButtonCategory/ButtonCategory';
 export {ButtonGreenIcon} from './ButtonGreenIcon/ButtonGreenIcon';
+export {CardGrey} from './CardGrey/CardGrey';
+export {FAIcon} from './FAIcon/FAIcon';
+export {PressableCard} from './PressableCard/PressableCard';
+export {CardGold} from './CardGold/CardGold';
+export {Divider} from './Divider/Divider';
+export {CardWhite} from './CardWhite/CardWhite';
+export {HandymanProfilePhoto} from './HandymanProfilePhoto/HandymanProfilePhoto';
 
 export {CustomInputReference} from './CustomInput/CustomInput';
 export {CustomPasswordInputReference} from './CustomPasswordInput/CustomPasswordInput';
