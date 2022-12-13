@@ -5,4 +5,10 @@ import {action} from '@storybook/addon-actions';
 
 storiesOf('organisms/HandymanCard', module)
   .addDecorator(story => story())
-  .add('default', () => <HandymanCard />);
+  .add('default', () => (
+    <HandymanCard
+      photoUrl={require('../../../assets/jpg/profile_photo.jpg')}
+      isOnline={true}
+      handymanName={'Harry Edward'}
+    />
+  ));

@@ -3,7 +3,7 @@ import {Text} from 'react-native';
 import styles from './TextSmall.styles';
 
 export type Props = {
-  text: string;
+  text: string | number;
   fontColor: string;
 };
 

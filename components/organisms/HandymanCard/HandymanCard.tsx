@@ -1,13 +1,30 @@
 import React from 'react';
 import {View} from 'react-native';
-import {CardWhite} from '../../atoms';
+import {CardWhite, HandymanName} from '../../atoms';
+import {HandymanProfilePhotoWithStatus} from '../../molecules';
 
-export type Props = {};
+export type Props = {
+  isOnline: boolean;
+  photoUrl: string;
+  handymanName: string;
+};
 
-export const HandymanCard: React.FC<Props> = ({}) => {
+export const HandymanCard: React.FC<Props> = ({
+  photoUrl,
+  isOnline,
+  handymanName,
+}) => {
   return (
     <CardWhite>
-      <View></View>
+      <View>
+        <HandymanProfilePhotoWithStatus
+          photoUrl={photoUrl}
+          isOnline={isOnline}
+        />
+        <View>
+          <HandymanName text={handymanName} />
+        </View>
+      </View>
     </CardWhite>
   );
 };

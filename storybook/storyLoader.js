@@ -16,8 +16,8 @@ function loadStories() {
   require('../components/atoms/CustomPasswordInput/CustomPasswordInput.stories');
   require('../components/atoms/Divider/Divider.stories');
   require('../components/atoms/FAIcon/FAIcon.stories');
+  require('../components/atoms/HandymanName/HandymanName.stories');
   require('../components/atoms/HandymanProfilePhoto/HandymanProfilePhoto.stories');
-  require('../components/atoms/HnadymanName/HandymanName.stories');
   require('../components/atoms/Label/Label.stories');
   require('../components/atoms/Link/Link.stories');
   require('../components/atoms/LogoImage/LogoImage.stories');
@@ -34,7 +34,9 @@ function loadStories() {
   require('../components/molecules/Logo/Logo.stories');
   require('../components/molecules/PasswordInputLabel/PasswordInputLabel.stories');
   require('../components/molecules/ProfilePhotoWithButton/ProfilePhotoWithButton.stories');
-  require('../components/molecules/RatingNumber/RatingNumber.stories');
+  require('../components/molecules/RatingNumberCard/RatingNumberCard.stories');
+  require('../components/molecules/RatingReviews/RatingReviews.stories');
+  require('../components/molecules/StarRating/StarRating.stories');
   require('../components/organisms/CategoryMenu/CategoryMenu.stories');
   require('../components/organisms/HandymanCard/HandymanCard.stories');
   require('../components/organisms/SignInForm/SignInForm.stories');
@@ -64,8 +66,8 @@ const stories = [
   '../components/atoms/CustomPasswordInput/CustomPasswordInput.stories',
   '../components/atoms/Divider/Divider.stories',
   '../components/atoms/FAIcon/FAIcon.stories',
+  '../components/atoms/HandymanName/HandymanName.stories',
   '../components/atoms/HandymanProfilePhoto/HandymanProfilePhoto.stories',
-  '../components/atoms/HnadymanName/HandymanName.stories',
   '../components/atoms/Label/Label.stories',
   '../components/atoms/Link/Link.stories',
   '../components/atoms/LogoImage/LogoImage.stories',
@@ -82,7 +84,9 @@ const stories = [
   '../components/molecules/Logo/Logo.stories',
   '../components/molecules/PasswordInputLabel/PasswordInputLabel.stories',
   '../components/molecules/ProfilePhotoWithButton/ProfilePhotoWithButton.stories',
-  '../components/molecules/RatingNumber/RatingNumber.stories',
+  '../components/molecules/RatingNumberCard/RatingNumberCard.stories',
+  '../components/molecules/RatingReviews/RatingReviews.stories',
+  '../components/molecules/StarRating/StarRating.stories',
   '../components/organisms/CategoryMenu/CategoryMenu.stories',
   '../components/organisms/HandymanCard/HandymanCard.stories',
   '../components/organisms/SignInForm/SignInForm.stories',
