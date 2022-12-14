@@ -4,7 +4,7 @@ export default StyleSheet.create({
   text: {
     fontSize: 12,
     fontFamily: 'OpenSans-Regular',
-    lineHeight: 23,
+    lineHeight: 20,
     textAlign: 'center',
   },
 });

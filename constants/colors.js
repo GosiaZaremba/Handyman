@@ -27,4 +27,6 @@ export const Colors = {
     grey: '#e1e1e1',
     gold: '#ffaa63',
   },
+  starGradient:
+    'linear-gradient(90deg, rgba(255,142,11,1) 0%, rgba(255,194,143,1) 100%)',
 };
