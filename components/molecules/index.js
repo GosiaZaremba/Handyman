@@ -5,7 +5,10 @@ export {ProfilePhotoWithButton} from './ProfilePhotoWithButton/ProfilePhotoWithB
 export {CategoryCard} from './CategoryCard/CategoryCard';
 export {DollarIcon} from './DollarIcon/DollarIcon';
 export {HandymanProfilePhotoWithStatus} from './HandymanProfilePhotoWithStatus/HandymanProfilePhotoWithStatus';
-export {RatingNumber} from './RatingNumber/RatingNumber';
+export {RatingNumberCard} from './RatingNumberCard/RatingNumberCard';
+export {StarRating} from './StarRating/StarRating';
+export {RatingReviews} from './RatingReviews/RatingReviews';
+export {SubCategoryList} from './SubCategoryList/SubCategoryList';
 
 export {PasswordInputLabelReference} from './PasswordInputLabel/PasswordInputLabel';
 export {InputLabelReference} from './InputLabel/InputLabel';

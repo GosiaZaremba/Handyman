@@ -37,6 +37,7 @@ function loadStories() {
   require('../components/molecules/RatingNumberCard/RatingNumberCard.stories');
   require('../components/molecules/RatingReviews/RatingReviews.stories');
   require('../components/molecules/StarRating/StarRating.stories');
+  require('../components/molecules/SubCategoryList/SubCategoryList.stories');
   require('../components/organisms/CategoryMenu/CategoryMenu.stories');
   require('../components/organisms/HandymanCard/HandymanCard.stories');
   require('../components/organisms/SignInForm/SignInForm.stories');
@@ -87,6 +88,7 @@ const stories = [
   '../components/molecules/RatingNumberCard/RatingNumberCard.stories',
   '../components/molecules/RatingReviews/RatingReviews.stories',
   '../components/molecules/StarRating/StarRating.stories',
+  '../components/molecules/SubCategoryList/SubCategoryList.stories',
   '../components/organisms/CategoryMenu/CategoryMenu.stories',
   '../components/organisms/HandymanCard/HandymanCard.stories',
   '../components/organisms/SignInForm/SignInForm.stories',

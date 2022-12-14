@@ -2,7 +2,7 @@
   {
     name: 'Harry Edward',
     haurlyRate: 55,
-    subCategory: ['cleaning', 'Home Cleaning', 'Office Cleaning'],
+    subCategories: ['cleaning', 'Home Cleaning', 'Office Cleaning'],
     category: ['cleaning'],
     numberOfReviews: 53,
     starRating: 5,
@@ -12,7 +12,7 @@
   {
     name: 'Elvis Presley',
     haurlyRate: 70,
-    subCategory: ['cleaning', 'Home Cleaning', 'Office Cleaning'],
+    subCategories: ['cleaning', 'Home Cleaning', 'Office Cleaning'],
     category: ['cleaning'],
     numberOfReviews: 37,
     starRating: 4,
@@ -22,7 +22,7 @@
   {
     name: 'Jackie Wilson',
     haurlyRate: 90,
-    subCategory: ['cleaning', 'Home Cleaning', 'Office Cleaning'],
+    subCategories: ['cleaning', 'Home Cleaning', 'Office Cleaning'],
     category: ['cleaning'],
     numberOfReviews: 24,
     starRating: 3,
@@ -32,7 +32,7 @@
   {
     name: 'John Lennon',
     haurlyRate: 75,
-    subCategory: ['cleaning', 'Home Cleaning', 'Office Cleaning'],
+    subCategories: ['cleaning', 'Home Cleaning', 'Office Cleaning'],
     category: ['cleaning'],
     numberOfReviews: 11,
     starRating: 4,
@@ -42,7 +42,7 @@
   {
     name: 'Mary Griffin',
     haurlyRate: 70,
-    subCategory: ['cleaning', 'Home Cleaning', 'Office Cleaning'],
+    subCategories: ['cleaning', 'Home Cleaning', 'Office Cleaning'],
     category: ['cleaning'],
     numberOfReviews: 36,
     starRating: 2,
@@ -52,7 +52,7 @@
   {
     name: 'Triss Merigold',
     haurlyRate: 50,
-    subCategory: ['Home Laundry', 'Hotel Laundry', 'Restaurant Laundry'],
+    subCategories: ['Home Laundry', 'Hotel Laundry', 'Restaurant Laundry'],
     category: ['laundry'],
     numberOfReviews: 5,
     starRating: 4,
@@ -63,7 +63,7 @@
   {
     name: 'Maria Barring',
     haurlyRate: 60,
-    subCategory: ['Home Laundry'],
+    subCategories: ['Home Laundry'],
     category: ['laundry'],
     numberOfReviews: 36,
     starRating: 3,
@@ -74,7 +74,7 @@
   {
     name: 'Sigismund Dijkstra',
     haurlyRate: 90,
-    subCategory: ['Home Electric', 'Something Other'],
+    subCategories: ['Home Electric', 'Something Other'],
     category: ['electrical'],
     numberOfReviews: 15,
     starRating: 5,
@@ -84,7 +84,7 @@
   {
     name: 'Leo Bonhart',
     haurlyRate: 60,
-    subCategory: ['Home Electric', 'Something Other'],
+    subCategories: ['Home Electric', 'Something Other'],
     category: ['electrical'],
     numberOfReviews: 12,
     starRating: 3,
@@ -94,7 +94,7 @@
   {
     name: 'Tissaia de Vries',
     haurlyRate: 120,
-    subCategory: ['Artistic Painting'],
+    subCategories: ['Artistic Painting'],
     category: ['painting'],
     numberOfReviews: 5,
     starRating: 4,
@@ -104,7 +104,7 @@
   {
     name: 'Isengrim Faoiltiarna',
     haurlyRate: 120,
-    subCategory: ['Home Painting', 'Home Electric'],
+    subCategories: ['Home Painting', 'Home Electric'],
     category: ['painting', 'electrical'],
     numberOfReviews: 5,
     starRating: 5,
@@ -114,7 +114,7 @@
   {
     name: 'Boreas Mun',
     haurlyRate: 120,
-    subCategory: ['Home Painting', 'Home Electric', 'Home Plumbing'],
+    subCategories: ['Home Painting', 'Home Electric', 'Home Plumbing'],
     category: ['painting', 'electrical', 'plumbing'],
     numberOfReviews: 5,
     starRating: 5,
@@ -124,7 +124,7 @@
   {
     name: 'Menno Coehoorn',
     haurlyRate: 120,
-    subCategory: ['Home Painting', 'Home Electric', 'Home Plumbing'],
+    subCategories: ['Home Painting', 'Home Electric', 'Home Plumbing'],
     category: ['wood-carving', 'home-repair', 'pack-and-shift'],
     numberOfReviews: 5,
     starRating: 5,
