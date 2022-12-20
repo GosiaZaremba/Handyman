@@ -6,10 +6,4 @@ export default StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-evenly',
   },
-  subCatList: {
-    borderWidth: 1,
-  },
-  categoryContainer: {
-    borderWidth: 1,
-  },
 });

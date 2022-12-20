@@ -5,9 +5,8 @@ export default StyleSheet.create({
   container: {
     backgroundColor: Colors.star.grey,
     borderRadius: 5,
-    width: '100%',
     paddingHorizontal: 5,
     paddingVertical: 2,
-    borderWidth: 2,
+    marginRight: 6,
   },
 });

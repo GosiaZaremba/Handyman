@@ -5,5 +5,6 @@ export default StyleSheet.create({
     fontSize: 16,
     fontFamily: 'OpenSans-Regular',
     lineHeight: 20,
+    textAlign: 'center',
   },
 });

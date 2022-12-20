@@ -1,24 +1,25 @@
 import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
+  outerContainer: {},
   topContainer: {
-    borderWidth: 1,
-    borderColor: 'red',
     flexDirection: 'row',
+    justifyContent: 'space-between',
+    margin: 10,
   },
-  outerContainer: {
-    borderWidth: 1,
-    borderColor: 'blue',
-    padding: 10,
+  profilePhotoContainer: {
+    justifyContent: 'center',
   },
   reviewsContainer: {
-    borderWidth: 1,
-    borderColor: 'green',
-    width: '70%',
+    width: '80%',
     marginLeft: 15,
   },
-  servicesContainer: {
-    borderWidth: 1,
-    borderColor: 'violet',
+  bottomContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    margin: 10,
+  },
+  buttonContainer: {
+    width: '35%',
   },
 });
