@@ -15,11 +15,7 @@ export const SubCategoryList: React.FC<Props> = ({subCategories}) => {
         data={subCategories}
         horizontal={true}
         keyExtractor={item => item}
-        renderItem={({item, index}) => (
-          // <View style={styles.categoryContainer}>
-          <CategoryCard text={item[1]} key={item} />
-          // </View>
-        )}
+        renderItem={({item}) => <CategoryCard text={item} key={item} />}
       />
     </View>
   );

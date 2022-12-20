@@ -1,12 +1,15 @@
 import React from 'react';
-import {ImageBackground, View} from 'react-native';
+import {ImageBackground, View, FlatList} from 'react-native';
 import {Colors} from '../../../constants/colors';
 import {TextMedium} from '../../atoms';
+import {HandymanCard} from '../../organisms';
 import styles from './HandymenListTemplate.styles';
 
-export type Props = {};
+export type Props = {
+  handymenList: any;
+};
 
-export const HandymenListTemplate: React.FC<Props> = ({}) => {
+export const HandymenListTemplate: React.FC<Props> = ({handymenList}) => {
   return (
     <ImageBackground
       style={styles.background}
@@ -16,6 +19,28 @@ export const HandymenListTemplate: React.FC<Props> = ({}) => {
         <TextMedium
           text={'Choose a handyman from below that best fits Your needs'}
           fontColor={Colors.font.white}
+        />
+      </View>
+      <View style={styles.listContainer}>
+        <FlatList
+          refreshing={false}
+          data={handymenList}
+          keyExtractor={item => item.name}
+          renderItem={({item}) => (
+            <View style={styles.listItem}>
+              <HandymanCard
+                key={item.name}
+                photoUrl={item.photo}
+                isOnline={item.isOnline}
+                handymanName={item.name}
+                ratingNumber={item.starRating}
+                starRating={item.starRating}
+                numberOfReviews={item.numberOfReviews}
+                subCategories={item.subCategories}
+                hourlyRate={item.hourlyRate}
+              />
+            </View>
+          )}
         />
       </View>
     </ImageBackground>

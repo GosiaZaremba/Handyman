@@ -30,6 +30,7 @@ function loadStories() {
   require('../components/molecules/CategoryCard/CategoryCard.stories');
   require('../components/molecules/DollarIcon/DollarIcon.stories');
   require('../components/molecules/HandymanProfilePhotoWithStatus/HandymanProfilePhotoWithStatus.stories');
+  require('../components/molecules/HourlyRate/HourlyRate.stories');
   require('../components/molecules/InputLabel/InputLabel.stories');
   require('../components/molecules/Logo/Logo.stories');
   require('../components/molecules/PasswordInputLabel/PasswordInputLabel.stories');
@@ -81,6 +82,7 @@ const stories = [
   '../components/molecules/CategoryCard/CategoryCard.stories',
   '../components/molecules/DollarIcon/DollarIcon.stories',
   '../components/molecules/HandymanProfilePhotoWithStatus/HandymanProfilePhotoWithStatus.stories',
+  '../components/molecules/HourlyRate/HourlyRate.stories',
   '../components/molecules/InputLabel/InputLabel.stories',
   '../components/molecules/Logo/Logo.stories',
   '../components/molecules/PasswordInputLabel/PasswordInputLabel.stories',

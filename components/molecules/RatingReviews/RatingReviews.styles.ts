@@ -5,6 +5,7 @@ export default StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'baseline',
     justifyContent: 'space-between',
-    width: '100%',
+    width: '75%',
+    marginVertical: 7,
   },
 });

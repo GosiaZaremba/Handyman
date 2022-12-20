@@ -9,6 +9,7 @@ export {RatingNumberCard} from './RatingNumberCard/RatingNumberCard';
 export {StarRating} from './StarRating/StarRating';
 export {RatingReviews} from './RatingReviews/RatingReviews';
 export {SubCategoryList} from './SubCategoryList/SubCategoryList';
+export {HourlyRate} from './HourlyRate/HourlyRate';
 
 export {PasswordInputLabelReference} from './PasswordInputLabel/PasswordInputLabel';
 export {InputLabelReference} from './InputLabel/InputLabel';

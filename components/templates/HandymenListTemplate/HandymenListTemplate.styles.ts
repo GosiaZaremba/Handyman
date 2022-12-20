@@ -6,7 +6,16 @@ export default StyleSheet.create({
     paddingVertical: 10,
   },
   header: {
-    // justifyContent: 'center',
-    // alignItems: 'center',
+    borderWidth: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  listContainer: {
+    marginTop: 60,
+    borderWidth: 1,
+  },
+  listItem: {
+    marginHorizontal: 18,
+    marginBottom: 15,
   },
 });

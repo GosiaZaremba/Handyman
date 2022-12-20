@@ -14,6 +14,7 @@ storiesOf('organisms/HandymanCard', module)
       ratingNumber={number('rating number', 4)}
       starRating={number('number of gold stars', 4)}
       numberOfReviews={number('number of reviews', 43)}
-      subCategories={[['Cleaning', 'Home Cleaning', 'Office Cleaning']]}
+      subCategories={['Cleaning', 'Home Cleaning', 'Office Cleaning']}
+      hourlyRate={75}
     />
   ));

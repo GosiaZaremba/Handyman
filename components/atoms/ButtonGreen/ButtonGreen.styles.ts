@@ -5,7 +5,7 @@ export default StyleSheet.create({
   gradient: {
     borderRadius: 10,
     width: '100%',
-    height: 40,
+    height: 35,
     justifyContent: 'center',
     alignItems: 'center',
     elevation: 8,
@@ -13,7 +13,7 @@ export default StyleSheet.create({
   pressable: {
     borderRadius: 10,
     width: '100%',
-    height: 40,
+    height: 35,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -21,7 +21,7 @@ export default StyleSheet.create({
     opacity: 0.8,
     borderRadius: 10,
     width: '100%',
-    height: 40,
+    height: 35,
     justifyContent: 'center',
     alignItems: 'center',
   },
