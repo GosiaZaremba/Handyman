@@ -4,12 +4,18 @@ import {Colors} from '../../../constants/colors';
 import {TextMedium} from '../../atoms';
 import {HandymanCard} from '../../organisms';
 import styles from './HandymenListTemplate.styles';
+import handymenList from '../../../assets/data/handymen';
 
 export type Props = {
-  handymenList: any;
+  chosenCategory?: string;
 };
 
-export const HandymenListTemplate: React.FC<Props> = ({handymenList}) => {
+export const HandymenListTemplate: React.FC<Props> = ({chosenCategory}) => {
+  const showHandymen = () => {
+    const newList = handymenList.filter(handyman => {
+      return handyman.category === chosenCategory;
+    });
+  };
   return (
     <ImageBackground
       style={styles.background}

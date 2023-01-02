@@ -11,7 +11,7 @@ import styles from './HandymanCard.styles';
 
 export type Props = {
   isOnline: boolean;
-  photoUrl: string;
+  photoUrl: any;
   handymanName: string;
   ratingNumber: number;
   starRating: number;
