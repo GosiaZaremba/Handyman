@@ -6,13 +6,13 @@ export default StyleSheet.create({
     paddingVertical: 10,
   },
   header: {
-    borderWidth: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    marginTop: 50,
+    marginHorizontal: 50,
   },
   listContainer: {
-    marginTop: 60,
-    borderWidth: 1,
+    marginTop: 20,
   },
   listItem: {
     marginHorizontal: 18,

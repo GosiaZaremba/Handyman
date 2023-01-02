@@ -5,29 +5,28 @@ import styles from './ButtonCategory.styles';
 import Icon from 'react-native-vector-icons/AntDesign';
 
 export type Props = {
-  // onPress: () => void;
+  onPress?: () => void;
   category: any;
   text: string;
+  isActive: boolean;
 };
 
-export const ButtonCategory: React.FC<Props> = ({category, text}) => {
-  const [pressedIn, setPressedIn] = useState<boolean>(false);
-
-  const onPressIn = () => {
-    setPressedIn(pressedIn => !pressedIn);
-    console.log('click');
-  };
-
+export const ButtonCategory: React.FC<Props> = ({
+  category,
+  text,
+  onPress,
+  isActive,
+}) => {
   return (
     <View style={styles.container}>
       <Pressable
         hitSlop={5}
-        style={pressedIn ? styles.pressed : styles.pressable}
-        onPress={onPressIn}>
+        style={isActive ? styles.pressed : styles.pressable}
+        onPress={onPress}>
         <View style={styles.iconContainer}>
           <Icon
             name={'checkcircle'}
-            style={pressedIn ? styles.icon : styles.iconHidden}
+            style={isActive ? styles.icon : styles.iconHidden}
           />
         </View>
         <Image source={category} style={styles.image} />
