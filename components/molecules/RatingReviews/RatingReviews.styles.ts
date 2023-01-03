@@ -7,5 +7,6 @@ export default StyleSheet.create({
     justifyContent: 'space-between',
     width: '75%',
     marginVertical: 7,
+    height: 25,
   },
 });

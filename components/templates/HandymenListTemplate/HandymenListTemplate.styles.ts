@@ -13,6 +13,7 @@ export default StyleSheet.create({
   },
   listContainer: {
     marginTop: 20,
+    flex: 1,
   },
   listItem: {
     marginHorizontal: 18,

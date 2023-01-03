@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {ImageBackground, View, FlatList} from 'react-native';
 import {Colors} from '../../../constants/colors';
 import {TextMedium} from '../../atoms';
@@ -7,15 +7,23 @@ import styles from './HandymenListTemplate.styles';
 import handymenList from '../../../assets/data/handymen';
 
 export type Props = {
-  chosenCategory?: string;
+  activeCategoryName?: string;
 };
 
-export const HandymenListTemplate: React.FC<Props> = ({chosenCategory}) => {
+export const HandymenListTemplate: React.FC<Props> = ({activeCategoryName}) => {
+  const [newHandymenList, setNewHandymenList] = useState<any>(null);
+
   const showHandymen = () => {
-    const newList = handymenList.filter(handyman => {
-      return handyman.category === chosenCategory;
+    const filteredList = handymenList.filter(handyman => {
+      return handyman.category === activeCategoryName;
     });
+    setNewHandymenList(filteredList);
   };
+
+  useEffect(() => {
+    showHandymen();
+  }, [activeCategoryName]);
+
   return (
     <ImageBackground
       style={styles.background}
@@ -30,7 +38,7 @@ export const HandymenListTemplate: React.FC<Props> = ({chosenCategory}) => {
       <View style={styles.listContainer}>
         <FlatList
           refreshing={false}
-          data={handymenList}
+          data={newHandymenList}
           keyExtractor={item => item.name}
           renderItem={({item}) => (
             <View style={styles.listItem}>

@@ -1,7 +1,6 @@
 import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
-  outerContainer: {},
   topContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
