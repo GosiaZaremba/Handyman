@@ -1,3 +1,4 @@
+import {useNavigation} from '@react-navigation/native';
 import React, {useState, useRef} from 'react';
 import {View} from 'react-native';
 import {ButtonCategory, ButtonGreenIcon} from '../../atoms';
@@ -6,13 +7,16 @@ import styles from './CategoryMenu.styles';
 export type Props = {};
 
 export const CategoryMenu: React.FC<Props> = () => {
+  const navigation = useNavigation<any>();
+
   const [activeCategoryName, setActiveCategoryName] = useState<string>('');
 
   const onPressCategory = (name: string) => {
     setActiveCategoryName(name);
   };
 
-  const onPressNext = () => console.log('Going to next step.');
+  const onPressNext = () =>
+    navigation.navigate('Handymen List', {activeCategoryName});
 
   return (
     <View style={styles.mainContainer}>

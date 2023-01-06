@@ -1,9 +1,13 @@
 import React from 'react';
 import {WelcomeTemplate} from '../../templates';
+import {useNavigation} from '@react-navigation/native';
+import {NavigationProp} from '../../../App';
 
 export const WelcomeScreen: React.FC = () => {
+  const navigation = useNavigation<NavigationProp>();
+
   const onPressGetStarted = () => {
-    console.log('Welcome Screen - get started button');
+    navigation.navigate('SignIn');
   };
 
   return <WelcomeTemplate onPressGetStarted={onPressGetStarted} />;

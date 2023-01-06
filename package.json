@@ -36,6 +36,7 @@
     "@testing-library/jest-native": "4.0.12",
     "@testing-library/react-native": "^11.4.0",
     "@types/react": "^18.0.25",
+    "@typescript-eslint/eslint-plugin": "^5.48.0",
     "jest-diff": "^29.2.0",
     "react": "18.1.0",
     "react-native": "0.70.5",
@@ -43,10 +44,13 @@
     "react-native-image-crop-picker": "^0.38.1",
     "react-native-linear-gradient": "^2.6.2",
     "react-native-reanimated": "^2.10.0",
+    "react-native-safe-area-context": "^4.4.1",
+    "react-native-screens": "^3.18.2",
     "react-native-storybook-loader": "^2.0.5",
     "react-native-vector-icons": "^9.2.0",
     "ts-jest": "26.5.6",
-    "typescript": "^4.8.4"
+    "typescript": "^4.8.4",
+    "typescript-eslint": "^0.0.1-alpha.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

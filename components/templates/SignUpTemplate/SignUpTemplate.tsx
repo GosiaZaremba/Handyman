@@ -2,12 +2,16 @@ import React from 'react';
 import {View, ImageBackground} from 'react-native';
 import {Colors} from '../../../constants/colors';
 import {Link, TextSmall} from '../../atoms';
-import {ProfilePhotoWithButton} from '../../molecules';
-import {SignUpForm, SignInTop, SocialSignUp} from '../../organisms';
+import {SignUpForm, SocialSignUp} from '../../organisms';
 import styles from './SignUpTemplate.styles';
 
 export type Props = {
-  onPressSignUp: (email?: string, password?: string) => void;
+  onPressSignUp: (
+    email?: string,
+    password?: string,
+    fullName?: string,
+    photoValue?: any,
+  ) => void;
   onPressFacebook: () => void;
   onPressTwitter: () => void;
   onPressGoogle: () => void;

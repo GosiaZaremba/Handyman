@@ -1,17 +1,13 @@
 import React from 'react';
 import {HandymenListTemplate} from '../../templates';
-import handymenList from '../../../assets/data/handymen';
 
 export type Props = {
-  choosenCategory: string;
+  route: any;
 };
 
-export const HandymenListScreen: React.FC<Props> = ({choosenCategory}) => {
-  const showHandymen = () => {
-    const newList = handymenList.filter(handyman => {
-      return handyman.category === choosenCategory;
-    });
-  };
+export const HandymenListScreen: React.FC<Props> = ({route}) => {
+  const activeCategoryName = route.params.activeCategoryName;
+  console.log(activeCategoryName);
 
-  return <HandymenListTemplate handymenList={handymenList} />;
+  return <HandymenListTemplate activeCategoryName={activeCategoryName} />;
 };

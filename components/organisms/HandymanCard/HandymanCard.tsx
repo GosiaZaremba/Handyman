@@ -11,7 +11,7 @@ import styles from './HandymanCard.styles';
 
 export type Props = {
   isOnline: boolean;
-  photoUrl: string;
+  photoUrl: any;
   handymanName: string;
   ratingNumber: number;
   starRating: number;
@@ -35,7 +35,7 @@ export const HandymanCard: React.FC<Props> = ({
   };
   return (
     <CardWhite>
-      <View style={styles.outerContainer}>
+      <View>
         <View style={styles.topContainer}>
           <View style={styles.profilePhotoContainer}>
             <HandymanProfilePhotoWithStatus
