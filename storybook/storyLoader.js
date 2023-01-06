@@ -9,6 +9,7 @@ function loadStories() {
   require('../components/atoms/ButtonGreen/ButtonGreen.stories');
   require('../components/atoms/ButtonGreenIcon/ButtonGreenIcon.stories');
   require('../components/atoms/ButtonWhite/ButtonWhite.stories');
+  require('../components/atoms/CalendarStripe/CalendarStripe.stories');
   require('../components/atoms/CardGold/CardGold.stories');
   require('../components/atoms/CardGrey/CardGrey.stories');
   require('../components/atoms/CardWhite/CardWhite.stories');
@@ -63,6 +64,7 @@ const stories = [
   '../components/atoms/ButtonGreen/ButtonGreen.stories',
   '../components/atoms/ButtonGreenIcon/ButtonGreenIcon.stories',
   '../components/atoms/ButtonWhite/ButtonWhite.stories',
+  '../components/atoms/CalendarStripe/CalendarStripe.stories',
   '../components/atoms/CardGold/CardGold.stories',
   '../components/atoms/CardGrey/CardGrey.stories',
   '../components/atoms/CardWhite/CardWhite.stories',
