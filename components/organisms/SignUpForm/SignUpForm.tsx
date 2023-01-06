@@ -40,6 +40,13 @@ export const SignUpForm: React.FC<Props> = ({onPressSignUp}) => {
         passwordValue,
         profilePhotoValue,
       );
+      console.log(
+        'signup form',
+        fullNameValue,
+        emailValue,
+        passwordValue,
+        profilePhotoValue,
+      );
     } else {
       onPressSignUp('', '', '', null);
     }

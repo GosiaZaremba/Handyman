@@ -1,14 +1,19 @@
 import React, {useState} from 'react';
 import {SignUpTemplate} from '../../templates';
 import ImagePicker from 'react-native-image-crop-picker';
+import {useNavigation} from '@react-navigation/native';
+import {NavigationProp} from '../../../App';
 
 export const SignUpScreen: React.FC = () => {
+  const navigation = useNavigation<NavigationProp>();
   const onPressSignUp = (
     fullName?: string,
     email?: string,
     password?: string,
+    photoValue?: any,
   ) => {
-    console.log('SignInScreen', fullName, email, password, photo.uri);
+    console.log('SignInScreen', fullName, email, password, photoValue);
+    navigation.navigate('PickAHandyman');
   };
   const onPressFacebook = () => {
     console.log('Log in with Facebook');
@@ -21,23 +26,8 @@ export const SignUpScreen: React.FC = () => {
     console.log('Log in with Google');
   };
 
-  const [photo, setPhoto] = useState<any>(
-    require('../../../assets/jpg/profile_photo.jpg'),
-  );
-  const onPressAddPhoto = () => {
-    console.log('Add photo');
-    ImagePicker.openPicker({
-      width: 100,
-      height: 100,
-      cropping: true,
-    }).then(image => {
-      setPhoto({uri: image.path});
-      console.log('photo', photo);
-    });
-  };
-
   const onPressGoToSignIn = () => {
-    console.log('Going to SignUpScreen');
+    navigation.navigate('SignIn');
   };
   return (
     <SignUpTemplate

@@ -10,8 +10,14 @@ import React from 'react';
 import type {ReactNode} from 'react';
 import {StyleSheet, View} from 'react-native';
 import StorybookUIRoot from './storybook';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {NavigationContainer} from '@react-navigation/native';
+import {
+  createNativeStackNavigator,
+  NativeStackNavigationProp,
+} from '@react-navigation/native-stack';
+import {
+  NavigationContainer,
+  NavigatorScreenParams,
+} from '@react-navigation/native';
 import {
   HandymenListScreen,
   PickAHandymanScreen,
@@ -23,6 +29,25 @@ import {
 /* $FlowFixMe[missing-local-annot] The type annotation(s) required by Flow's
  * LTI update could not be added via codemod */
 
+export type RootTabParamList = {
+  SignIn: undefined;
+  WelcomeScreen: undefined;
+  SignUp: undefined;
+  PickAHandyman: undefined;
+  HandymenList: undefined;
+};
+
+export type RootStackParamList = {
+  Root: NavigatorScreenParams<RootTabParamList>;
+  SignIn: undefined;
+  WelcomeScreen: undefined;
+  SignUp: undefined;
+  PickAHandyman: undefined;
+  HandymenList: undefined;
+};
+
+export type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
+
 const Stack = createNativeStackNavigator();
 
 const App: () => ReactNode = () => {
@@ -32,11 +57,11 @@ const App: () => ReactNode = () => {
         screenOptions={{
           headerShown: false,
         }}>
-        <Stack.Screen name="Welcome Screen" component={WelcomeScreen} />
+        <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} />
         <Stack.Screen name="SignIn" component={SignInScreen} />
-        <Stack.Screen name="Sign Up" component={SignUpScreen} />
-        <Stack.Screen name="Pick A Handyman" component={PickAHandymanScreen} />
-        <Stack.Screen name="Handymen List" component={HandymenListScreen} />
+        <Stack.Screen name="SignUp" component={SignUpScreen} />
+        <Stack.Screen name="PickAHandyman" component={PickAHandymanScreen} />
+        <Stack.Screen name="HandymenList" component={HandymenListScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
