@@ -9,10 +9,11 @@ export default StyleSheet.create({
   dateNumberStyle: {
     color: Colors.font.darkGrey,
     fontFamily: 'OpenSans-Regular',
+    fontSize: 12,
   },
   dateNameStyle: {
     color: Colors.font.darkGrey,
-    fontFamily: 'OpenSans-Bold',
+    fontFamily: 'OpenSans-Regular',
     fontSize: 12,
     marginBottom: 5,
   },
@@ -22,16 +23,16 @@ export default StyleSheet.create({
   highlightDateNumberStyle: {
     fontFamily: 'OpenSans-Regular',
     color: Colors.font.white,
-    fontSize: 16,
+    fontSize: 12,
   },
   highlightDateNameStyle: {
     color: Colors.font.darkGrey,
-    fontFamily: 'OpenSans-Bold',
+    fontFamily: 'OpenSans-Regular',
     fontSize: 12,
     marginTop: 5,
   },
   highlightDateNumberContainerStyle: {
-    backgroundColor: Colors.button.dark,
+    backgroundColor: Colors.calendar,
     borderRadius: 25,
     height: 30,
     width: 30,

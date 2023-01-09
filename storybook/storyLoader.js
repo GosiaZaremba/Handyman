@@ -28,6 +28,7 @@ function loadStories() {
   require('../components/atoms/TextLarge/TextLarge.stories');
   require('../components/atoms/TextMedium/TextMedium.stories');
   require('../components/atoms/TextSmall/TextSmall.stories');
+  require('../components/molecules/CalendarStripeWithLabel/CalendarStripeWithLabel.stories');
   require('../components/molecules/CategoryCard/CategoryCard.stories');
   require('../components/molecules/DollarIcon/DollarIcon.stories');
   require('../components/molecules/HandymanProfilePhotoWithStatus/HandymanProfilePhotoWithStatus.stories');
@@ -83,6 +84,7 @@ const stories = [
   '../components/atoms/TextLarge/TextLarge.stories',
   '../components/atoms/TextMedium/TextMedium.stories',
   '../components/atoms/TextSmall/TextSmall.stories',
+  '../components/molecules/CalendarStripeWithLabel/CalendarStripeWithLabel.stories',
   '../components/molecules/CategoryCard/CategoryCard.stories',
   '../components/molecules/DollarIcon/DollarIcon.stories',
   '../components/molecules/HandymanProfilePhotoWithStatus/HandymanProfilePhotoWithStatus.stories',

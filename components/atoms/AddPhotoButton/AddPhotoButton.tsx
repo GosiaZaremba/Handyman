@@ -1,4 +1,4 @@
-import React, {forwardRef, useImperativeHandle, useState} from 'react';
+import React from 'react';
 import {Pressable} from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
 import styles from './AddPhotoButton.styles';
@@ -8,8 +8,6 @@ export type Props = {
 };
 
 export const AddPhotoButton: React.FC<Props> = ({onPress}) => {
-  const appImagePickerReference = React.createRef();
-
   return (
     <Pressable
       style={({pressed}) => (pressed ? styles.pressed : styles.pressable)}
