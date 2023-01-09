@@ -52,18 +52,18 @@ export type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
 
 const App: () => ReactNode = () => {
   return (
-    //   <NavigationContainer>
-    //     <Stack.Navigator
-    //       screenOptions={{
-    //         headerShown: false,
-    //       }}>
-    //       <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} />
-    //       <Stack.Screen name="SignIn" component={SignInScreen} />
-    //       <Stack.Screen name="SignUp" component={SignUpScreen} />
-    //       <Stack.Screen name="PickAHandyman" component={PickAHandymanScreen} />
-    //       <Stack.Screen name="HandymenList" component={HandymenListScreen} />
-    //     </Stack.Navigator>
-    //   </NavigationContainer>
+    // <NavigationContainer>
+    //   <Stack.Navigator
+    //     screenOptions={{
+    //       headerShown: false,
+    //     }}>
+    //     <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} />
+    //     <Stack.Screen name="SignIn" component={SignInScreen} />
+    //     <Stack.Screen name="SignUp" component={SignUpScreen} />
+    //     <Stack.Screen name="PickAHandyman" component={PickAHandymanScreen} />
+    //     <Stack.Screen name="HandymenList" component={HandymenListScreen} />
+    //   </Stack.Navigator>
+    // </NavigationContainer>
 
     <View></View>
   );

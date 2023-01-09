@@ -1,23 +1,28 @@
-import React, {useImperativeHandle, useRef, useState} from 'react';
+import React, {useImperativeHandle, useRef, useState, forwardRef} from 'react';
 import {View} from 'react-native';
+import ReactNativeCalendarStrip from 'react-native-calendar-strip';
 import CalendarStrip from 'react-native-calendar-strip';
 import {Colors} from '../../../constants/colors';
 import styles from './CalendarStripe.styles';
 
 export type SelectedDateReference = {
-  getSelectedDate: () => any;
+  getValue: () => undefined | Date | string;
 };
 
-export const CalendarStripe: React.ForwardRefRenderFunction<
+const CalendarStripeWithReference: React.ForwardRefRenderFunction<
   SelectedDateReference
 > = ({}, ref) => {
-  const [date, setDate] = useState<Date>(new Date());
+  const [selectedDate, setSelectedDate] = useState<Date>(new Date());
 
-  const dateReference = useRef<CalendarStrip>(null);
+  const dateReference = useRef<ReactNativeCalendarStrip>(null);
+
+  const onDateSelection = date => {
+    setSelectedDate(date);
+  };
 
   useImperativeHandle(ref, () => ({
-    getSelectedDate: () => {
-      setDate();
+    getValue: () => {
+      return selectedDate;
     },
   }));
   return (
@@ -39,6 +44,9 @@ export const CalendarStripe: React.ForwardRefRenderFunction<
       highlightDateNameStyle={styles.highlightDateNameStyle}
       dayContainerStyle={styles.dayContainerStyle}
       ref={dateReference}
+      onDateSelected={onDateSelection}
     />
   );
 };
+
+export const CalendarStripe = forwardRef(CalendarStripeWithReference);

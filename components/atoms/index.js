@@ -21,7 +21,8 @@ export {Divider} from './Divider/Divider';
 export {CardWhite} from './CardWhite/CardWhite';
 export {HandymanProfilePhoto} from './HandymanProfilePhoto/HandymanProfilePhoto';
 export {HandymanName} from './HandymanName/HandymanName';
+export {CalendarStripe} from './CalendarStripe/CalendarStripe';
 
 export {CustomInputReference} from './CustomInput/CustomInput';
 export {CustomPasswordInputReference} from './CustomPasswordInput/CustomPasswordInput';
-export {photoReference} from './AddPhotoButton/AddPhotoButton';
+export {SelectedDateReference} from './CalendarStripe/CalendarStripe';

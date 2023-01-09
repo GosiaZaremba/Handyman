@@ -29,4 +29,5 @@ export const Colors = {
   },
   starGradient:
     'linear-gradient(90deg, rgba(255,142,11,1) 0%, rgba(255,194,143,1) 100%)',
+  calendar: '#51b55d',
 };
