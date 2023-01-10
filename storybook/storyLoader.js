@@ -16,6 +16,7 @@ function loadStories() {
   require('../components/atoms/CustomInput/CustomInput.stories');
   require('../components/atoms/CustomPasswordInput/CustomPasswordInput.stories');
   require('../components/atoms/Divider/Divider.stories');
+  require('../components/atoms/DropdownSelect/DropdownSelect.stories');
   require('../components/atoms/FAIcon/FAIcon.stories');
   require('../components/atoms/HandymanName/HandymanName.stories');
   require('../components/atoms/HandymanProfilePhoto/HandymanProfilePhoto.stories');
@@ -72,6 +73,7 @@ const stories = [
   '../components/atoms/CustomInput/CustomInput.stories',
   '../components/atoms/CustomPasswordInput/CustomPasswordInput.stories',
   '../components/atoms/Divider/Divider.stories',
+  '../components/atoms/DropdownSelect/DropdownSelect.stories',
   '../components/atoms/FAIcon/FAIcon.stories',
   '../components/atoms/HandymanName/HandymanName.stories',
   '../components/atoms/HandymanProfilePhoto/HandymanProfilePhoto.stories',
