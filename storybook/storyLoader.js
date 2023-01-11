@@ -16,6 +16,7 @@ function loadStories() {
   require('../components/atoms/CustomInput/CustomInput.stories');
   require('../components/atoms/CustomPasswordInput/CustomPasswordInput.stories');
   require('../components/atoms/Divider/Divider.stories');
+  require('../components/atoms/DropdownSelect/DropdownSelect.stories');
   require('../components/atoms/FAIcon/FAIcon.stories');
   require('../components/atoms/HandymanName/HandymanName.stories');
   require('../components/atoms/HandymanProfilePhoto/HandymanProfilePhoto.stories');
@@ -31,6 +32,7 @@ function loadStories() {
   require('../components/molecules/CalendarStripeWithLabel/CalendarStripeWithLabel.stories');
   require('../components/molecules/CategoryCard/CategoryCard.stories');
   require('../components/molecules/DollarIcon/DollarIcon.stories');
+  require('../components/molecules/DropdownSelectWithLabel/DropdownSelectWithLabel.stories');
   require('../components/molecules/HandymanProfilePhotoWithStatus/HandymanProfilePhotoWithStatus.stories');
   require('../components/molecules/HourlyRate/HourlyRate.stories');
   require('../components/molecules/InputLabel/InputLabel.stories');
@@ -72,6 +74,7 @@ const stories = [
   '../components/atoms/CustomInput/CustomInput.stories',
   '../components/atoms/CustomPasswordInput/CustomPasswordInput.stories',
   '../components/atoms/Divider/Divider.stories',
+  '../components/atoms/DropdownSelect/DropdownSelect.stories',
   '../components/atoms/FAIcon/FAIcon.stories',
   '../components/atoms/HandymanName/HandymanName.stories',
   '../components/atoms/HandymanProfilePhoto/HandymanProfilePhoto.stories',
@@ -87,6 +90,7 @@ const stories = [
   '../components/molecules/CalendarStripeWithLabel/CalendarStripeWithLabel.stories',
   '../components/molecules/CategoryCard/CategoryCard.stories',
   '../components/molecules/DollarIcon/DollarIcon.stories',
+  '../components/molecules/DropdownSelectWithLabel/DropdownSelectWithLabel.stories',
   '../components/molecules/HandymanProfilePhotoWithStatus/HandymanProfilePhotoWithStatus.stories',
   '../components/molecules/HourlyRate/HourlyRate.stories',
   '../components/molecules/InputLabel/InputLabel.stories',

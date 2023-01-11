@@ -7,7 +7,6 @@ import {
   CalendarStripe,
   FAIcon,
   SelectedDateReference,
-  TextLarge,
   TextMedium,
 } from '../../atoms';
 
