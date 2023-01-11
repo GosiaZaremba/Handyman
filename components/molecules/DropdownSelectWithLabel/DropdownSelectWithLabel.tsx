@@ -11,6 +11,9 @@ import styles from './DropdownSelectWithLabel.styles';
 
 export type Props = {
   selectOptions: any;
+  labelTextLarge: string;
+  labelTextSmall: string;
+  placeholderValue: string;
 };
 
 export type DropdownSelectWithLabelReference = {
@@ -20,7 +23,10 @@ export type DropdownSelectWithLabelReference = {
 const DropdownSelectWithLabelAndReference: React.ForwardRefRenderFunction<
   DropdownSelectWithLabelReference,
   Props
-> = ({selectOptions}, ref) => {
+> = (
+  {selectOptions, labelTextLarge, labelTextSmall, placeholderValue},
+  ref,
+) => {
   const selectReference = useRef<DropdownSelectReference>();
 
   useImperativeHandle(ref, () => ({
@@ -31,13 +37,13 @@ const DropdownSelectWithLabelAndReference: React.ForwardRefRenderFunction<
   return (
     <View>
       <View style={styles.labelContainer}>
-        <TextMedium text={'SELECT HOURS  '} fontColor={Colors.font.darkGrey} />
-        <TextSmall
-          text={'(of Service you need)'}
-          fontColor={Colors.font.darkGrey}
-        />
+        <TextMedium text={labelTextLarge} fontColor={Colors.font.darkGrey} />
+        <TextSmall text={labelTextSmall} fontColor={Colors.font.darkGrey} />
       </View>
-      <DropdownSelect selectOptions={selectOptions} />
+      <DropdownSelect
+        selectOptions={selectOptions}
+        placeholderValue={selectOptions[0].label}
+      />
     </View>
   );
 };

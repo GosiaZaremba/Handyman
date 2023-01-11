@@ -23,8 +23,10 @@ export {HandymanProfilePhoto} from './HandymanProfilePhoto/HandymanProfilePhoto'
 export {HandymanName} from './HandymanName/HandymanName';
 export {CalendarStripe} from './CalendarStripe/CalendarStripe';
 export {DropdownSelect} from './DropdownSelect/DropdownSelect';
+export {TextArea} from './TextArea/TextArea';
 
 export {CustomInputReference} from './CustomInput/CustomInput';
 export {CustomPasswordInputReference} from './CustomPasswordInput/CustomPasswordInput';
 export {SelectedDateReference} from './CalendarStripe/CalendarStripe';
 export {DropdownSelectReference} from './DropdownSelect/DropdownSelect';
+export {TextAreaReference} from './TextArea/TextArea';

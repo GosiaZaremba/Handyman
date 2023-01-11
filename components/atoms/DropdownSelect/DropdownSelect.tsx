@@ -5,6 +5,7 @@ import styles from './DropdownSelect.styles';
 
 export type Props = {
   selectOptions: any;
+  placeholderValue: any;
 };
 
 export type DropdownSelectReference = {
@@ -14,7 +15,7 @@ export type DropdownSelectReference = {
 const DropdownSelectWithReference: React.ForwardRefRenderFunction<
   DropdownSelectReference,
   Props
-> = ({selectOptions}, ref) => {
+> = ({selectOptions, placeholderValue}, ref) => {
   const pickedValueReference = useRef<any>(null);
 
   const selectValue = value => {
@@ -43,7 +44,7 @@ const DropdownSelectWithReference: React.ForwardRefRenderFunction<
         maxHeight={300}
         labelField="label"
         valueField="value"
-        placeholder={selectOptions[0].label}
+        placeholder={placeholderValue}
         value={value}
         onFocus={() => setIsFocus(true)}
         onBlur={() => setIsFocus(false)}

@@ -26,6 +26,7 @@ function loadStories() {
   require('../components/atoms/PressableCard/PressableCard.stories');
   require('../components/atoms/ProfilePhoto/ProfilePhoto.stories');
   require('../components/atoms/SocialIcon/SocialIcon.stories');
+  require('../components/atoms/TextArea/TextArea.stories');
   require('../components/atoms/TextLarge/TextLarge.stories');
   require('../components/atoms/TextMedium/TextMedium.stories');
   require('../components/atoms/TextSmall/TextSmall.stories');
@@ -43,6 +44,7 @@ function loadStories() {
   require('../components/molecules/RatingReviews/RatingReviews.stories');
   require('../components/molecules/StarRating/StarRating.stories');
   require('../components/molecules/SubCategoryList/SubCategoryList.stories');
+  require('../components/molecules/TextAreaWithLabel/TextAreaWithLabel.stories');
   require('../components/organisms/CategoryMenu/CategoryMenu.stories');
   require('../components/organisms/HandymanCard/HandymanCard.stories');
   require('../components/organisms/SignInForm/SignInForm.stories');
@@ -84,6 +86,7 @@ const stories = [
   '../components/atoms/PressableCard/PressableCard.stories',
   '../components/atoms/ProfilePhoto/ProfilePhoto.stories',
   '../components/atoms/SocialIcon/SocialIcon.stories',
+  '../components/atoms/TextArea/TextArea.stories',
   '../components/atoms/TextLarge/TextLarge.stories',
   '../components/atoms/TextMedium/TextMedium.stories',
   '../components/atoms/TextSmall/TextSmall.stories',
@@ -101,6 +104,7 @@ const stories = [
   '../components/molecules/RatingReviews/RatingReviews.stories',
   '../components/molecules/StarRating/StarRating.stories',
   '../components/molecules/SubCategoryList/SubCategoryList.stories',
+  '../components/molecules/TextAreaWithLabel/TextAreaWithLabel.stories',
   '../components/organisms/CategoryMenu/CategoryMenu.stories',
   '../components/organisms/HandymanCard/HandymanCard.stories',
   '../components/organisms/SignInForm/SignInForm.stories',
