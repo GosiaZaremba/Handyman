@@ -32,6 +32,7 @@ function loadStories() {
   require('../components/molecules/CalendarStripeWithLabel/CalendarStripeWithLabel.stories');
   require('../components/molecules/CategoryCard/CategoryCard.stories');
   require('../components/molecules/DollarIcon/DollarIcon.stories');
+  require('../components/molecules/DropdownSelectWithLabel/DropdownSelectWithLabel.stories');
   require('../components/molecules/HandymanProfilePhotoWithStatus/HandymanProfilePhotoWithStatus.stories');
   require('../components/molecules/HourlyRate/HourlyRate.stories');
   require('../components/molecules/InputLabel/InputLabel.stories');
@@ -89,6 +90,7 @@ const stories = [
   '../components/molecules/CalendarStripeWithLabel/CalendarStripeWithLabel.stories',
   '../components/molecules/CategoryCard/CategoryCard.stories',
   '../components/molecules/DollarIcon/DollarIcon.stories',
+  '../components/molecules/DropdownSelectWithLabel/DropdownSelectWithLabel.stories',
   '../components/molecules/HandymanProfilePhotoWithStatus/HandymanProfilePhotoWithStatus.stories',
   '../components/molecules/HourlyRate/HourlyRate.stories',
   '../components/molecules/InputLabel/InputLabel.stories',

@@ -1,11 +1,11 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react-native';
-import {DropdownSelect} from './DropdownSelect';
+import {DropdownSelectWithLabel} from './DropdownSelectWithLabel';
 
-storiesOf('atoms/DropdownSelect', module)
+storiesOf('molecules/DropdownSelectWithLabel', module)
   .addDecorator(story => story())
   .add('default', () => (
-    <DropdownSelect
+    <DropdownSelectWithLabel
       selectOptions={[
         {label: '1 hour', value: 1},
         {label: '2 hours', value: 2},
