@@ -39,7 +39,7 @@ const TextAreaWithLabelAndReference: React.ForwardRefRenderFunction<
       <View style={styles.labelContainer}>
         <TextMedium text={labelText} fontColor={fontColor} />
       </View>
-      <TextArea placeholder={placeholder} />
+      <TextArea placeholder={placeholder} ref={textAreaReference} />
     </View>
   );
 };

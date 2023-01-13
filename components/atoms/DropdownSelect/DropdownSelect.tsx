@@ -19,9 +19,7 @@ const DropdownSelectWithReference: React.ForwardRefRenderFunction<
   const pickedValueReference = useRef<any>(null);
 
   const selectValue = value => {
-    setValue(value);
-    console.log(value.value);
-    console.log('ref', pickedValueReference);
+    setValue(value.value);
     setIsFocus(false);
   };
 
