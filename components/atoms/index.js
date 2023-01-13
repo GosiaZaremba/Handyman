@@ -24,6 +24,7 @@ export {HandymanName} from './HandymanName/HandymanName';
 export {CalendarStripe} from './CalendarStripe/CalendarStripe';
 export {DropdownSelect} from './DropdownSelect/DropdownSelect';
 export {TextArea} from './TextArea/TextArea';
+export {ButtonGreenIconFirst} from './ButtonGreenIconFirst/ButtonGreenIconFirst';
 
 export {CustomInputReference} from './CustomInput/CustomInput';
 export {CustomPasswordInputReference} from './CustomPasswordInput/CustomPasswordInput';

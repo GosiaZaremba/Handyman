@@ -27,7 +27,7 @@ const DropdownSelectWithLabelAndReference: React.ForwardRefRenderFunction<
   {selectOptions, labelTextLarge, labelTextSmall, placeholderValue},
   ref,
 ) => {
-  const selectReference = useRef<DropdownSelectReference>();
+  const selectReference = useRef<DropdownSelectReference>(null);
 
   useImperativeHandle(ref, () => ({
     getValue: () => {
@@ -43,6 +43,7 @@ const DropdownSelectWithLabelAndReference: React.ForwardRefRenderFunction<
       <DropdownSelect
         selectOptions={selectOptions}
         placeholderValue={selectOptions[0].label}
+        ref={selectReference}
       />
     </View>
   );

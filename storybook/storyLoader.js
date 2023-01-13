@@ -8,6 +8,7 @@ function loadStories() {
   require('../components/atoms/ButtonCategory/ButtonCategory.stories');
   require('../components/atoms/ButtonGreen/ButtonGreen.stories');
   require('../components/atoms/ButtonGreenIcon/ButtonGreenIcon.stories');
+  require('../components/atoms/ButtonGreenIconFirst/ButtonGreenIconFirst.stories');
   require('../components/atoms/ButtonWhite/ButtonWhite.stories');
   require('../components/atoms/CalendarStripe/CalendarStripe.stories');
   require('../components/atoms/CardGold/CardGold.stories');
@@ -45,7 +46,9 @@ function loadStories() {
   require('../components/molecules/StarRating/StarRating.stories');
   require('../components/molecules/SubCategoryList/SubCategoryList.stories');
   require('../components/molecules/TextAreaWithLabel/TextAreaWithLabel.stories');
+  require('../components/organisms/AppointmentForm/AppointmentForm.stories');
   require('../components/organisms/CategoryMenu/CategoryMenu.stories');
+  require('../components/organisms/HandymanAppointmentCard/HandymanAppointmentCard.stories');
   require('../components/organisms/HandymanCard/HandymanCard.stories');
   require('../components/organisms/SignInForm/SignInForm.stories');
   require('../components/organisms/SignInTop/SignInTop.stories');
@@ -57,6 +60,7 @@ function loadStories() {
   require('../components/screens/SignUpScreen/SignUpScreen.stories');
   require('../components/screens/WelcomeScreen/WelcomeScreen.stories');
   require('../components/templates/HandymenListTemplate/HandymenListTemplate.stories');
+  require('../components/templates/HireHandymanTemplate/HireHandymanTemplate.stories');
   require('../components/templates/PickAHandymanTemplate/PickAHandymanTemplate.stories');
   require('../components/templates/SignInTemplate/SignInTemplate.stories');
   require('../components/templates/SignUpTemplate/SignUpTemplate.stories');
@@ -68,6 +72,7 @@ const stories = [
   '../components/atoms/ButtonCategory/ButtonCategory.stories',
   '../components/atoms/ButtonGreen/ButtonGreen.stories',
   '../components/atoms/ButtonGreenIcon/ButtonGreenIcon.stories',
+  '../components/atoms/ButtonGreenIconFirst/ButtonGreenIconFirst.stories',
   '../components/atoms/ButtonWhite/ButtonWhite.stories',
   '../components/atoms/CalendarStripe/CalendarStripe.stories',
   '../components/atoms/CardGold/CardGold.stories',
@@ -105,7 +110,9 @@ const stories = [
   '../components/molecules/StarRating/StarRating.stories',
   '../components/molecules/SubCategoryList/SubCategoryList.stories',
   '../components/molecules/TextAreaWithLabel/TextAreaWithLabel.stories',
+  '../components/organisms/AppointmentForm/AppointmentForm.stories',
   '../components/organisms/CategoryMenu/CategoryMenu.stories',
+  '../components/organisms/HandymanAppointmentCard/HandymanAppointmentCard.stories',
   '../components/organisms/HandymanCard/HandymanCard.stories',
   '../components/organisms/SignInForm/SignInForm.stories',
   '../components/organisms/SignInTop/SignInTop.stories',
@@ -117,6 +124,7 @@ const stories = [
   '../components/screens/SignUpScreen/SignUpScreen.stories',
   '../components/screens/WelcomeScreen/WelcomeScreen.stories',
   '../components/templates/HandymenListTemplate/HandymenListTemplate.stories',
+  '../components/templates/HireHandymanTemplate/HireHandymanTemplate.stories',
   '../components/templates/PickAHandymanTemplate/PickAHandymanTemplate.stories',
   '../components/templates/SignInTemplate/SignInTemplate.stories',
   '../components/templates/SignUpTemplate/SignUpTemplate.stories',

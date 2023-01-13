@@ -17,12 +17,12 @@ export type Props = {
   iconColor: string;
 };
 
-export type CalendarLabelReference = {
+export type CalendarWithLabelReference = {
   getValue: () => undefined | Date | string;
 };
 
 const CalendarStripeWithLabelReference: React.ForwardRefRenderFunction<
-  CalendarLabelReference,
+  CalendarWithLabelReference,
   Props
 > = ({labelText, iconName, iconColor, iconSize}, ref) => {
   const dateReference = useRef<SelectedDateReference>(null);
@@ -36,10 +36,10 @@ const CalendarStripeWithLabelReference: React.ForwardRefRenderFunction<
   return (
     <>
       <View style={styles.labelContainer}>
-        <TextMedium text={labelText} fontColor={Colors.font.grey} />
+        <TextMedium text={labelText} fontColor={Colors.font.darkGrey} />
         <FAIcon iconName={iconName} iconColor={iconColor} iconSize={iconSize} />
       </View>
-      <CalendarStripe />
+      <CalendarStripe ref={dateReference} />
     </>
   );
 };

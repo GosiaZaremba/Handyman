@@ -10,7 +10,13 @@ export {StarRating} from './StarRating/StarRating';
 export {RatingReviews} from './RatingReviews/RatingReviews';
 export {SubCategoryList} from './SubCategoryList/SubCategoryList';
 export {HourlyRate} from './HourlyRate/HourlyRate';
+export {CalendarStripeWithLabel} from './CalendarStripeWithLabel/CalendarStripeWithLabel';
+export {DropdownSelectWithLabel} from './DropdownSelectWithLabel/DropdownSelectWithLabel';
+export {TextAreaWithLabel} from './TextAreaWithLabel/TextAreaWithLabel';
 
 export {PasswordInputLabelReference} from './PasswordInputLabel/PasswordInputLabel';
 export {InputLabelReference} from './InputLabel/InputLabel';
 export {ProfilePhotoWithButtonReference} from './ProfilePhotoWithButton/ProfilePhotoWithButton';
+export {CalendarWithLabelReference} from './CalendarStripeWithLabel/CalendarStripeWithLabel';
+export {DropdownSelectWithLabelReference} from './DropdownSelectWithLabel/DropdownSelectWithLabel';
+export {TextAreaWithLabelReference} from './TextAreaWithLabel/TextAreaWithLabel';
