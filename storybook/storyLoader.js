@@ -55,6 +55,7 @@ function loadStories() {
   require('../components/organisms/SignUpForm/SignUpForm.stories');
   require('../components/organisms/SocialSignUp/SocialSignUp.stories');
   require('../components/screens/HandymenListScreen/HandymenListScreen.stories');
+  require('../components/screens/HireHandymanScreen/HireHandymanScreen.stories');
   require('../components/screens/PickAHandymanScreen/PickAHandymanScreen.stories');
   require('../components/screens/SignInScreen/SignInScreen.stories');
   require('../components/screens/SignUpScreen/SignUpScreen.stories');
@@ -119,6 +120,7 @@ const stories = [
   '../components/organisms/SignUpForm/SignUpForm.stories',
   '../components/organisms/SocialSignUp/SocialSignUp.stories',
   '../components/screens/HandymenListScreen/HandymenListScreen.stories',
+  '../components/screens/HireHandymanScreen/HireHandymanScreen.stories',
   '../components/screens/PickAHandymanScreen/PickAHandymanScreen.stories',
   '../components/screens/SignInScreen/SignInScreen.stories',
   '../components/screens/SignUpScreen/SignUpScreen.stories',
