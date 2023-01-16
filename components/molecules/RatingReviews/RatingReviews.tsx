@@ -7,9 +7,9 @@ import {StarRating} from '../StarRating/StarRating';
 import styles from './RatingReviews.styles';
 
 export type Props = {
-  ratingNumber: number;
-  numberOfReviews: number;
-  starRating: number;
+  ratingNumber?: number;
+  numberOfReviews?: number;
+  starRating?: number;
 };
 
 export const RatingReviews: React.FC<Props> = ({
