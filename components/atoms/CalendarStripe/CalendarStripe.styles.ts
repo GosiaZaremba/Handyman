@@ -3,7 +3,6 @@ import {Colors} from '../../../constants/colors';
 
 export default StyleSheet.create({
   calendar: {
-    // height: 100
     padding: 10,
   },
   dateNumberStyle: {

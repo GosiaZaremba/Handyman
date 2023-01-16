@@ -1,5 +1,7 @@
 import React from 'react';
 import {ImageBackground, View} from 'react-native';
+import {Colors} from '../../../constants/colors';
+import {TextMedium} from '../../atoms';
 import {HandymanAppointmentCard, AppointmentForm} from '../../organisms';
 import styles from './HireHandymanTemplate.styles';
 
@@ -37,21 +39,31 @@ export const HireHandymanTemplate: React.FC<Props> = ({
       style={styles.background}
       source={require('../../../assets/png/05_top.png')}
       resizeMode={'cover'}>
-      <View>
-        <HandymanAppointmentCard
-          isOnline={isOnline}
-          photoUrl={photoUrl}
-          handymanName={handymanName}
-          ratingNumber={ratingNumber}
-          starRating={starRating}
-          numberOfReviews={numberOfReviews}
-          subCategories={subCategories}
-          hourlyRate={hourlyRate}
-        />
-        <AppointmentForm
-          sendAppointmentForm={sendAppointmentForm}
-          onPressPrevious={onPressPrevious}
-        />
+      <View style={styles.container}>
+        <View style={styles.header}>
+          <TextMedium
+            text={'Select the date, time and hour of service you need'}
+            fontColor={Colors.font.white}
+          />
+        </View>
+        <View style={styles.cardContainer}>
+          <HandymanAppointmentCard
+            isOnline={isOnline}
+            photoUrl={photoUrl}
+            handymanName={handymanName}
+            ratingNumber={ratingNumber}
+            starRating={starRating}
+            numberOfReviews={numberOfReviews}
+            subCategories={subCategories}
+            hourlyRate={hourlyRate}
+          />
+        </View>
+        <View style={styles.formContainer}>
+          <AppointmentForm
+            sendAppointmentForm={sendAppointmentForm}
+            onPressPrevious={onPressPrevious}
+          />
+        </View>
       </View>
     </ImageBackground>
   );

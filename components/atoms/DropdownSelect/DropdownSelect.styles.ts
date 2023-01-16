@@ -7,18 +7,18 @@ export default StyleSheet.create({
     borderRadius: 8,
   },
   dropdown: {
-    height: 50,
+    height: 35,
     borderColor: 'gray',
     borderRadius: 8,
     paddingHorizontal: 8,
   },
   placeholderStyle: {
-    fontSize: 16,
+    fontSize: 14,
     fontFamily: 'OpenSans-Regular',
     color: 'black',
   },
   selectedTextStyle: {
-    fontSize: 16,
+    fontSize: 14,
     fontFamily: 'OpenSans-Regular',
     color: 'black',
   },

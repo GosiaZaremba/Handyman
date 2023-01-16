@@ -5,4 +5,17 @@ export default StyleSheet.create({
     flex: 1,
     paddingVertical: 10,
   },
+  container: {
+    paddingHorizontal: 18,
+  },
+  header: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 50,
+    marginHorizontal: 50,
+  },
+  cardContainer: {
+    marginVertical: 15,
+  },
+  formContainer: {},
 });

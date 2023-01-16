@@ -32,7 +32,6 @@ const CalendarStripeWithReference: React.ForwardRefRenderFunction<
       scrollerPaging={true}
       style={styles.calendar}
       innerStyle={{}}
-      calendarColor={Colors.font.white}
       dateNumberStyle={styles.dateNumberStyle}
       dateNameStyle={styles.dateNameStyle}
       iconContainer={styles.iconContainer}
