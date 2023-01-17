@@ -58,7 +58,7 @@ export const HireHandymanTemplate: React.FC<Props> = ({
             hourlyRate={hourlyRate}
           />
         </View>
-        <View style={styles.formContainer}>
+        <View>
           <AppointmentForm
             sendAppointmentForm={sendAppointmentForm}
             onPressPrevious={onPressPrevious}

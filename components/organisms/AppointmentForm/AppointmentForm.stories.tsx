@@ -11,5 +11,8 @@ storiesOf('organisms/AppointmentForm', module)
       sendAppointmentForm={() => {
         console.log('click');
       }}
+      onPressPrevious={() => {
+        console.log('click');
+      }}
     />
   ));

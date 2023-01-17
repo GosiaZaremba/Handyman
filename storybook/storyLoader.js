@@ -48,6 +48,7 @@ function loadStories() {
   require('../components/molecules/TextAreaWithLabel/TextAreaWithLabel.stories');
   require('../components/organisms/AppointmentForm/AppointmentForm.stories');
   require('../components/organisms/CategoryMenu/CategoryMenu.stories');
+  require('../components/organisms/DrawerContent/DrawerContent.stories');
   require('../components/organisms/HandymanAppointmentCard/HandymanAppointmentCard.stories');
   require('../components/organisms/HandymanCard/HandymanCard.stories');
   require('../components/organisms/SignInForm/SignInForm.stories');
@@ -60,6 +61,7 @@ function loadStories() {
   require('../components/screens/SignInScreen/SignInScreen.stories');
   require('../components/screens/SignUpScreen/SignUpScreen.stories');
   require('../components/screens/WelcomeScreen/WelcomeScreen.stories');
+  require('../components/templates/DrawerTemplate/DrawerTemplate.stories');
   require('../components/templates/HandymenListTemplate/HandymenListTemplate.stories');
   require('../components/templates/HireHandymanTemplate/HireHandymanTemplate.stories');
   require('../components/templates/PickAHandymanTemplate/PickAHandymanTemplate.stories');
@@ -113,6 +115,7 @@ const stories = [
   '../components/molecules/TextAreaWithLabel/TextAreaWithLabel.stories',
   '../components/organisms/AppointmentForm/AppointmentForm.stories',
   '../components/organisms/CategoryMenu/CategoryMenu.stories',
+  '../components/organisms/DrawerContent/DrawerContent.stories',
   '../components/organisms/HandymanAppointmentCard/HandymanAppointmentCard.stories',
   '../components/organisms/HandymanCard/HandymanCard.stories',
   '../components/organisms/SignInForm/SignInForm.stories',
@@ -125,6 +128,7 @@ const stories = [
   '../components/screens/SignInScreen/SignInScreen.stories',
   '../components/screens/SignUpScreen/SignUpScreen.stories',
   '../components/screens/WelcomeScreen/WelcomeScreen.stories',
+  '../components/templates/DrawerTemplate/DrawerTemplate.stories',
   '../components/templates/HandymenListTemplate/HandymenListTemplate.stories',
   '../components/templates/HireHandymanTemplate/HireHandymanTemplate.stories',
   '../components/templates/PickAHandymanTemplate/PickAHandymanTemplate.stories',
