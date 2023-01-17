@@ -9,5 +9,6 @@ export default StyleSheet.create({
   },
   buttonContainer: {
     width: '30%',
+    marginTop: 15,
   },
 });

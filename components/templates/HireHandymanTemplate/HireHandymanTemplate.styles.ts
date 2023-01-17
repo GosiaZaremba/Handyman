@@ -3,7 +3,7 @@ import {StyleSheet} from 'react-native';
 export default StyleSheet.create({
   background: {
     flex: 1,
-    paddingVertical: 10,
+    paddingVertical: 5,
   },
   container: {
     paddingHorizontal: 18,
@@ -17,5 +17,4 @@ export default StyleSheet.create({
   cardContainer: {
     marginVertical: 15,
   },
-  formContainer: {},
 });
