@@ -4,4 +4,4 @@ import {DrawerMainItems} from './DrawerMainItems';
 
 storiesOf('organisms/DrawerMainItems', module)
   .addDecorator(story => story())
-  .add('default', () => <DrawerMainItems />);
+  .add('default', () => <DrawerMainItems isMenuItemPressed={false} />);

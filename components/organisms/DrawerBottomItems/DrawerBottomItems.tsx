@@ -1,14 +1,15 @@
 import React from 'react';
 import {View} from 'react-native';
-import {FAIcon} from '../../atoms';
 import {DrawerItem} from '@react-navigation/drawer';
 import {Colors} from '../../../constants/colors';
-import FontAwesome5Icon from 'react-native-vector-icons/FontAwesome5';
-import AntDesignIcon from 'react-native-vector-icons/AntDesign';
-import FontAwesomeIcon from 'react-native-vector-icons/FontAwesome';
-import MaterialIconsIcon from 'react-native-vector-icons/MaterialIcons';
+import {CustomIcon} from '../../atoms';
+import svgs from '../../../assets/svgs/svgs';
 
-export const DrawerBottomItems: React.FC = () => {
+export type Props = {
+  isMenuItemPressed: boolean;
+};
+
+export const DrawerBottomItems: React.FC<Props> = ({isMenuItemPressed}) => {
   return (
     <View>
       <DrawerItem
@@ -17,7 +18,9 @@ export const DrawerBottomItems: React.FC = () => {
           console.log('Share');
         }}
         icon={() => (
-          <AntDesignIcon color={Colors.font.grey} size={20} name={'sharealt'} />
+          <CustomIcon
+            icon={isMenuItemPressed ? svgs.green.share : svgs.grey.share}
+          />
         )}
       />
       <DrawerItem
@@ -26,7 +29,9 @@ export const DrawerBottomItems: React.FC = () => {
           console.log('Settings');
         }}
         icon={() => (
-          <AntDesignIcon color={Colors.font.grey} size={20} name={'setting'} />
+          <CustomIcon
+            icon={isMenuItemPressed ? svgs.green.share : svgs.grey.share}
+          />
         )}
       />
     </View>

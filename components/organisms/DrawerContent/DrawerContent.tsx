@@ -11,7 +11,7 @@ export const DrawerContent: React.FC<Props> = ({}) => {
       style={styles.background}
       source={require('../../../assets/png/05_top.png')}
       resizeMode={'cover'}>
-      <DrawerMainItems />
+      <DrawerMainItems isMenuItemPressed={true} />
     </ImageBackground>
   );
 };

@@ -1,14 +1,15 @@
 import React from 'react';
 import {View} from 'react-native';
 import {DrawerItem} from '@react-navigation/drawer';
-import {Colors} from '../../../constants/colors';
-import FontAwesome5Icon from 'react-native-vector-icons/FontAwesome5';
-import AntDesignIcon from 'react-native-vector-icons/AntDesign';
-import FontAwesomeIcon from 'react-native-vector-icons/FontAwesome';
-import MaterialIconsIcon from 'react-native-vector-icons/MaterialIcons';
 import styles from './DrawerMainItems.styles';
+import {CustomIcon} from '../../atoms';
+import svgs from '../../../assets/svgs/svgs';
 
-export const DrawerMainItems: React.FC = () => {
+export type Props = {
+  isMenuItemPressed: boolean;
+};
+
+export const DrawerMainItems: React.FC<Props> = ({isMenuItemPressed}) => {
   return (
     <View style={styles.itemsContainer}>
       <DrawerItem
@@ -17,7 +18,9 @@ export const DrawerMainItems: React.FC = () => {
           console.log('Profile');
         }}
         icon={() => (
-          <AntDesignIcon color={Colors.font.grey} size={20} name={'user'} />
+          <CustomIcon
+            icon={isMenuItemPressed ? svgs.green.user : svgs.grey.user}
+          />
         )}
       />
       <DrawerItem
@@ -26,7 +29,9 @@ export const DrawerMainItems: React.FC = () => {
           console.log('dropbox');
         }}
         icon={() => (
-          <FontAwesome5Icon color={Colors.font.grey} size={20} name={'box'} />
+          <CustomIcon
+            icon={isMenuItemPressed ? svgs.green.box : svgs.grey.box}
+          />
         )}
       />
       <DrawerItem
@@ -35,10 +40,8 @@ export const DrawerMainItems: React.FC = () => {
           console.log('Message');
         }}
         icon={() => (
-          <FontAwesomeIcon
-            color={Colors.font.grey}
-            size={20}
-            name={'envelope-o'}
+          <CustomIcon
+            icon={isMenuItemPressed ? svgs.green.message : svgs.grey.message}
           />
         )}
       />
@@ -48,10 +51,8 @@ export const DrawerMainItems: React.FC = () => {
           console.log('Help Video');
         }}
         icon={() => (
-          <MaterialIconsIcon
-            color={Colors.font.grey}
-            size={20}
-            name={'ondemand-video'}
+          <CustomIcon
+            icon={isMenuItemPressed ? svgs.green.video : svgs.grey.video}
           />
         )}
       />
@@ -61,7 +62,9 @@ export const DrawerMainItems: React.FC = () => {
           console.log('Share');
         }}
         icon={() => (
-          <AntDesignIcon color={Colors.font.grey} size={20} name={'sharealt'} />
+          <CustomIcon
+            icon={isMenuItemPressed ? svgs.green.share : svgs.grey.share}
+          />
         )}
       />
       <DrawerItem
@@ -70,7 +73,11 @@ export const DrawerMainItems: React.FC = () => {
           console.log('Rate App');
         }}
         icon={() => (
-          <AntDesignIcon color={Colors.font.grey} size={20} name={'staro'} />
+          <CustomIcon
+            icon={
+              isMenuItemPressed ? svgs.green.favourites : svgs.grey.favourites
+            }
+          />
         )}
       />
     </View>

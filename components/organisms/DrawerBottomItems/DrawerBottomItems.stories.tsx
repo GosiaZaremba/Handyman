@@ -6,4 +6,4 @@ import {text} from '@storybook/addon-knobs';
 
 storiesOf('organisms/DrawerBottomItems', module)
   .addDecorator(story => story())
-  .add('default', () => <DrawerBottomItems />);
+  .add('default', () => <DrawerBottomItems isMenuItemPressed={true} />);
