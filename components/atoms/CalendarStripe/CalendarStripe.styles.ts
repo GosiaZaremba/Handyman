@@ -3,8 +3,8 @@ import {Colors} from '../../../constants/colors';
 
 export default StyleSheet.create({
   calendar: {
-    // height: 100
-    padding: 10,
+    marginTop: 10,
+    height: 50,
   },
   dateNumberStyle: {
     color: Colors.font.darkGrey,
@@ -34,13 +34,12 @@ export default StyleSheet.create({
   highlightDateNumberContainerStyle: {
     backgroundColor: Colors.calendar,
     borderRadius: 25,
-    height: 30,
-    width: 30,
+    height: 28,
+    width: 28,
     justifyContent: 'center',
     elevation: 8,
   },
   dayContainerStyle: {
-    // padding: 5,
-    height: 35,
+    height: 32,
   },
 });

@@ -31,8 +31,7 @@ const CalendarStripeWithReference: React.ForwardRefRenderFunction<
       showMonth={false}
       scrollerPaging={true}
       style={styles.calendar}
-      innerStyle={{}}
-      calendarColor={Colors.font.white}
+      innerStyle={{flex: 1}}
       dateNumberStyle={styles.dateNumberStyle}
       dateNameStyle={styles.dateNameStyle}
       iconContainer={styles.iconContainer}
