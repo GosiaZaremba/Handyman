@@ -16,7 +16,9 @@ export const CategoryMenu: React.FC<Props> = () => {
   };
 
   const onPressNext = () =>
-    navigation.navigate('Handymen List', {activeCategoryName});
+    navigation.navigate('HandymenList', {
+      activeCategoryName,
+    });
 
   return (
     <View style={styles.mainContainer}>
