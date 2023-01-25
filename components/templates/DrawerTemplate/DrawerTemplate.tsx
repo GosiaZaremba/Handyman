@@ -32,7 +32,6 @@ export const DrawerTemplate: React.FC<Props> = ({}) => {
           headerTitleStyle: styles.headerTitleStyle,
           drawerStyle: styles.drawerStyle,
           drawerActiveTintColor: Colors.star.gold,
-          //   drawerIcon: () => <Icon name={'paw'} size={20} color="black" />,
         }}>
         <Drawer.Screen
           name="Login"

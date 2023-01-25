@@ -1,28 +1,14 @@
 import React from 'react';
-// import {Image, View} from 'react-native';
-// import styles from './CustomIcon.styles';
-
-// export type Props = {
-//   iconName: any;
-// };
-
-// export const CustomIcon: React.FC<Props> = ({iconName}) => {
-//   return (
-//     <View>
-//       <Image source={iconName} />
-//     </View>
-//   );
-// };
-
 import {SvgXml} from 'react-native-svg';
-import svgs from '../../../assets/svgs/svgs';
 
-const fill = '#dd4b39';
+export type Props = {
+  icon: string;
+};
 
-export const CustomIcon: React.FC = () => {
+export const CustomIcon: React.FC<Props> = ({icon}) => {
   return (
     <>
-      <SvgXml width={50} height={50} xml={svgs.favourites} fill={fill} />
+      <SvgXml width={25} height={25} xml={icon} />
     </>
   );
 };
