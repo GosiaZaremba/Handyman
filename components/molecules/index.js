@@ -13,6 +13,7 @@ export {HourlyRate} from './HourlyRate/HourlyRate';
 export {CalendarStripeWithLabel} from './CalendarStripeWithLabel/CalendarStripeWithLabel';
 export {DropdownSelectWithLabel} from './DropdownSelectWithLabel/DropdownSelectWithLabel';
 export {TextAreaWithLabel} from './TextAreaWithLabel/TextAreaWithLabel';
+export {DrawerMenuItem} from './DrawerMenuItem/DrawerMenuItem';
 
 export {PasswordInputLabelReference} from './PasswordInputLabel/PasswordInputLabel';
 export {InputLabelReference} from './InputLabel/InputLabel';

@@ -8,7 +8,7 @@ export type Props = {
 export const CustomIcon: React.FC<Props> = ({icon}) => {
   return (
     <>
-      <SvgXml width={25} height={25} xml={icon} />
+      <SvgXml width={20} height={20} xml={icon} />
     </>
   );
 };

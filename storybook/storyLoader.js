@@ -18,6 +18,7 @@ function loadStories() {
   require('../components/atoms/CustomInput/CustomInput.stories');
   require('../components/atoms/CustomPasswordInput/CustomPasswordInput.stories');
   require('../components/atoms/Divider/Divider.stories');
+  require('../components/atoms/DrawerMenuNotification/DrawerMenuNotification.stories');
   require('../components/atoms/DropdownSelect/DropdownSelect.stories');
   require('../components/atoms/FAIcon/FAIcon.stories');
   require('../components/atoms/HandymanName/HandymanName.stories');
@@ -35,6 +36,7 @@ function loadStories() {
   require('../components/molecules/CalendarStripeWithLabel/CalendarStripeWithLabel.stories');
   require('../components/molecules/CategoryCard/CategoryCard.stories');
   require('../components/molecules/DollarIcon/DollarIcon.stories');
+  require('../components/molecules/DrawerMenuItem/DrawerMenuItem.stories');
   require('../components/molecules/DropdownSelectWithLabel/DropdownSelectWithLabel.stories');
   require('../components/molecules/HandymanProfilePhotoWithStatus/HandymanProfilePhotoWithStatus.stories');
   require('../components/molecules/HourlyRate/HourlyRate.stories');
@@ -49,7 +51,6 @@ function loadStories() {
   require('../components/molecules/TextAreaWithLabel/TextAreaWithLabel.stories');
   require('../components/organisms/AppointmentForm/AppointmentForm.stories');
   require('../components/organisms/CategoryMenu/CategoryMenu.stories');
-  require('../components/organisms/DrawerBottomItems/DrawerBottomItems.stories');
   require('../components/organisms/DrawerContent/DrawerContent.stories');
   require('../components/organisms/DrawerMainItems/DrawerMainItems.stories');
   require('../components/organisms/HandymanAppointmentCard/HandymanAppointmentCard.stories');
@@ -88,6 +89,7 @@ const stories = [
   '../components/atoms/CustomInput/CustomInput.stories',
   '../components/atoms/CustomPasswordInput/CustomPasswordInput.stories',
   '../components/atoms/Divider/Divider.stories',
+  '../components/atoms/DrawerMenuNotification/DrawerMenuNotification.stories',
   '../components/atoms/DropdownSelect/DropdownSelect.stories',
   '../components/atoms/FAIcon/FAIcon.stories',
   '../components/atoms/HandymanName/HandymanName.stories',
@@ -105,6 +107,7 @@ const stories = [
   '../components/molecules/CalendarStripeWithLabel/CalendarStripeWithLabel.stories',
   '../components/molecules/CategoryCard/CategoryCard.stories',
   '../components/molecules/DollarIcon/DollarIcon.stories',
+  '../components/molecules/DrawerMenuItem/DrawerMenuItem.stories',
   '../components/molecules/DropdownSelectWithLabel/DropdownSelectWithLabel.stories',
   '../components/molecules/HandymanProfilePhotoWithStatus/HandymanProfilePhotoWithStatus.stories',
   '../components/molecules/HourlyRate/HourlyRate.stories',
@@ -119,7 +122,6 @@ const stories = [
   '../components/molecules/TextAreaWithLabel/TextAreaWithLabel.stories',
   '../components/organisms/AppointmentForm/AppointmentForm.stories',
   '../components/organisms/CategoryMenu/CategoryMenu.stories',
-  '../components/organisms/DrawerBottomItems/DrawerBottomItems.stories',
   '../components/organisms/DrawerContent/DrawerContent.stories',
   '../components/organisms/DrawerMainItems/DrawerMainItems.stories',
   '../components/organisms/HandymanAppointmentCard/HandymanAppointmentCard.stories',
