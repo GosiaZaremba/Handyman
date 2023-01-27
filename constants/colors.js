@@ -34,4 +34,7 @@ export const Colors = {
     grey: '#adadad',
     green: '#29a95f',
   },
+  drawer: {
+    highlight: '#ecf7f1',
+  },
 };

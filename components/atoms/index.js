@@ -26,6 +26,7 @@ export {DropdownSelect} from './DropdownSelect/DropdownSelect';
 export {TextArea} from './TextArea/TextArea';
 export {ButtonGreenIconFirst} from './ButtonGreenIconFirst/ButtonGreenIconFirst';
 export {CustomIcon} from './CustomIcon/CustomIcon';
+export {DrawerMenuNotification} from './DrawerMenuNotification/DrawerMenuNotification';
 
 export {CustomInputReference} from './CustomInput/CustomInput';
 export {CustomPasswordInputReference} from './CustomPasswordInput/CustomPasswordInput';
