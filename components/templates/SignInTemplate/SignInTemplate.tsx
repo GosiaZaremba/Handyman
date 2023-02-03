@@ -24,7 +24,9 @@ export const SignInTemplate: React.FC<Props> = ({
       resizeMode={'cover'}>
       <View style={styles.profilePhoto}>
         <SignInTop welcomeText={'Welcome back!'} />
-        <ProfilePhoto photoUrl={photo} />
+        <View style={styles.photoContainer}>
+          <ProfilePhoto photoUrl={photo} />
+        </View>
       </View>
       <SignInForm
         onPressSignIn={onPressSignIn}

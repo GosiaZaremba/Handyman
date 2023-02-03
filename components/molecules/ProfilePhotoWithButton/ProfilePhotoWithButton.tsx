@@ -39,7 +39,10 @@ export const ProfilePhotoWithButtonAndReference: React.ForwardRefRenderFunction<
   }));
   return (
     <View style={styles.container}>
-      <ProfilePhoto photoUrl={photo} />
+      <View style={styles.photoContainer}>
+        <ProfilePhoto photoUrl={photo} />
+      </View>
+
       <AddPhotoButton onPress={onPressAddPhoto} />
     </View>
   );

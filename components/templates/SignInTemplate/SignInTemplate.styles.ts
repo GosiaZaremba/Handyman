@@ -11,4 +11,11 @@ export default StyleSheet.create({
     justifyContent: 'flex-end',
     height: '30%',
   },
+  photoContainer: {
+    height: 100,
+    width: 100,
+    borderRadius: 50,
+    backgroundColor: 'rgba(255,255,255,.4)',
+    padding: 5,
+  },
 });

@@ -1,5 +1,9 @@
 import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
-  itemsContainer: {},
+  itemsContainer: {
+    flex: 1,
+    justifyContent: 'space-between',
+  },
+  bottomMenu: {},
 });

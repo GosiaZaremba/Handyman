@@ -8,3 +8,4 @@ export {AppointmentForm} from './AppointmentForm/AppointmentForm';
 export {HandymanAppointmentCard} from './HandymanAppointmentCard/HandymanAppointmentCard';
 export {DrawerContent} from './DrawerContent/DrawerContent';
 export {DrawerMainItems} from './DrawerMainItems/DrawerMainItems';
+export {DrawerHeader} from './DrawerHeader/DrawerHeader';
