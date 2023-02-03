@@ -76,7 +76,7 @@ export const DrawerMainItems: React.FC<Props> = ({}) => {
         />
       </View>
 
-      <View>
+      <View style={styles.bottomMenu}>
         <DrawerMenuItem
           icon={
             active === 'Contact Us' ? svgs.green.helpdesk : svgs.grey.helpdesk

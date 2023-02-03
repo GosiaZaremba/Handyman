@@ -12,11 +12,21 @@ import styles from './DrawerTemplate.styles';
 import {ImageBackground} from 'react-native';
 import {DrawerContent} from '../../organisms/DrawerContent/DrawerContent';
 
-export type Props = {};
+export type Props = {
+  photoUrl: any;
+  userName: string;
+  userLocation: string;
+  onPressLogOut: () => void;
+};
 
 const Drawer = createDrawerNavigator();
 
-export const DrawerTemplate: React.FC<Props> = ({}) => {
+export const DrawerTemplate: React.FC<Props> = ({
+  photoUrl,
+  userName,
+  userLocation,
+  onPressLogOut,
+}) => {
   return (
     <Drawer.Navigator
       initialRouteName={'Welcome'}

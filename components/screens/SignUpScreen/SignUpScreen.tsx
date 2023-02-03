@@ -5,7 +5,7 @@ import {useNavigation} from '@react-navigation/native';
 import {NavigationProp} from '../../../App';
 
 export const SignUpScreen: React.FC = () => {
-  const navigation = useNavigation<NavigationProp>();
+  // const navigation = useNavigation<NavigationProp>();
   const onPressSignUp = (
     fullName?: string,
     email?: string,
@@ -13,7 +13,7 @@ export const SignUpScreen: React.FC = () => {
     photoValue?: any,
   ) => {
     console.log('SignInScreen', fullName, email, password, photoValue);
-    navigation.navigate('PickAHandyman');
+    // navigation.navigate('PickAHandyman');
   };
   const onPressFacebook = () => {
     console.log('Log in with Facebook');
@@ -27,7 +27,7 @@ export const SignUpScreen: React.FC = () => {
   };
 
   const onPressGoToSignIn = () => {
-    navigation.navigate('SignIn');
+    // navigation.navigate('SignIn');
   };
   return (
     <SignUpTemplate

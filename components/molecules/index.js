@@ -14,6 +14,7 @@ export {CalendarStripeWithLabel} from './CalendarStripeWithLabel/CalendarStripeW
 export {DropdownSelectWithLabel} from './DropdownSelectWithLabel/DropdownSelectWithLabel';
 export {TextAreaWithLabel} from './TextAreaWithLabel/TextAreaWithLabel';
 export {DrawerMenuItem} from './DrawerMenuItem/DrawerMenuItem';
+export {OffButton} from './OffButton/OffButton';
 
 export {PasswordInputLabelReference} from './PasswordInputLabel/PasswordInputLabel';
 export {InputLabelReference} from './InputLabel/InputLabel';
