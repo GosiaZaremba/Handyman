@@ -1,25 +1,19 @@
-import { AppRegistry } from 'react-native';
-import {
-    getStorybookUI,
-    configure,
-    addDecorator,
-} from '@storybook/react-native';
-import { name as appName } from '../app.json';
-import { withKnobs } from '@storybook/addon-knobs';
+import {getStorybookUI, configure, addDecorator} from '@storybook/react-native';
+import {withKnobs} from '@storybook/addon-knobs';
 
-import { loadStories } from './storyLoader';
+import {loadStories} from './storyLoader';
 
 import './rn-addons';
 addDecorator(withKnobs);
 // import stories
 configure(() => {
-    loadStories();
+  loadStories();
 }, module);
 
 // Refer to https://github.com/storybookjs/storybook/tree/master/app/react-native#start-command-parameters
 // To find allowed options for getStorybookUI
 const StorybookUIRoot = getStorybookUI({
-    asyncStorage: null,
+  asyncStorage: null,
 });
 
 // If you are using React Native vanilla and after installation you don't see your app name here, write it manually.

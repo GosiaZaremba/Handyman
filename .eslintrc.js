@@ -1,13 +1,13 @@
 module.exports = {
   root: true,
-  extends: ['plugin:@typescript-eslint/recommended'],
+  extends: ['plugin:@typescript-eslint/recommended', '@react-native-community'],
   parser: '@typescript-eslint/parser',
-  // plugins: ['@typescript-eslint'],
-  rules: {'@typescript-eslint/no-unused-vars': 'off'},
+  plugins: ['@typescript-eslint', 'react', 'react-native', 'jest'],
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
       rules: {
+        '@typescript-eslint/no-unused-vars': 'off',
         '@typescript-eslint/no-shadow': ['off'],
         'no-shadow': 'off',
         'no-undef': 'off',

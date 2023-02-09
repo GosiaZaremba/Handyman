@@ -3,20 +3,20 @@ import React, {useState} from 'react';
 import {SignInTemplate} from '../../templates';
 
 export const SignInScreen: React.FC = () => {
-  // const navigation = useNavigation<any>();
+  const navigation = useNavigation<any>();
   const [photo, setPhoto] = useState<any>(
     require('../../../assets/jpg/profile_photo.jpg'),
   );
   const onPressSignIn = (email?: string, password?: string) => {
     console.log('SignInScreen', email, password);
-    // navigation.navigate('PickAHandyman');
+    navigation.navigate('PickAHandyman');
   };
   const onPressForgotPassword = () => {
     console.log('Sending forgot password email');
   };
 
   const onPressSignUp = () => {
-    // navigation.navigate('SignUp');
+    navigation.navigate('SignUp');
   };
   return (
     <SignInTemplate
