@@ -12,7 +12,7 @@ export const AddPhotoButton: React.FC<Props> = ({onPress}) => {
     <Pressable
       style={({pressed}) => (pressed ? styles.pressed : styles.pressable)}
       onPress={onPress}>
-      <Icon name={'pluscircle'} style={styles.buttonIcon}></Icon>
+      <Icon name={'pluscircle'} style={styles.buttonIcon} />
     </Pressable>
   );
 };

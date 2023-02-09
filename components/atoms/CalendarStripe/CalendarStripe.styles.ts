@@ -42,4 +42,5 @@ export default StyleSheet.create({
   dayContainerStyle: {
     height: 32,
   },
+  innerStyle: {flex: 1},
 });

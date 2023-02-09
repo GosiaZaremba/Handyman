@@ -2,6 +2,8 @@ export const Colors = {
   button: {
     light: '#02a568',
     dark: '#71bc59',
+    addPhoto: '#43b35d',
+    categoryButton: 'rgba(0,184,117,.1)',
   },
   gold: {
     light: '#ffaa63',
@@ -37,4 +39,5 @@ export const Colors = {
   drawer: {
     highlight: '#ecf7f1',
   },
+  black: '#000000',
 };

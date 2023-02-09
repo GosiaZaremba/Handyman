@@ -17,7 +17,7 @@ export default StyleSheet.create({
     borderRadius: 10,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'rgba(0,184,117,.1)',
+    backgroundColor: Colors.button.categoryButton,
     borderWidth: 1,
     borderColor: Colors.icon,
   },

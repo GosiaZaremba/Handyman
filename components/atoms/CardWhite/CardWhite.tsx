@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {ReactNode} from 'react';
 import {View} from 'react-native';
 import styles from './CardWhite.styles';
 
 export type Props = {
-  children?: any;
+  children?: ReactNode;
 };
 
 export const CardWhite: React.FC<Props> = ({children}) => {

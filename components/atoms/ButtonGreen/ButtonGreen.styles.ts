@@ -26,7 +26,7 @@ export default StyleSheet.create({
     alignItems: 'center',
   },
   buttonText: {
-    color: '#fff',
+    color: Colors.font.white,
     fontFamily: 'OpenSans-Bold',
   },
 });

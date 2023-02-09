@@ -4,4 +4,4 @@ import {CardWhite} from './CardWhite';
 
 storiesOf('atoms/CardWhite', module)
   .addDecorator(story => story())
-  .add('default', () => <CardWhite children={''} />);
+  .add('default', () => <CardWhite />);
