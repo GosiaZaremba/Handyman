@@ -8,9 +8,13 @@ import handymenList from '../../../assets/data/handymen';
 
 export type Props = {
   activeCategoryName?: string;
+  onPressChooseHandymanButton: () => void;
 };
 
-export const HandymenListTemplate: React.FC<Props> = ({activeCategoryName}) => {
+export const HandymenListTemplate: React.FC<Props> = ({
+  activeCategoryName,
+  onPressChooseHandymanButton,
+}) => {
   const [newHandymenList, setNewHandymenList] = useState<any>(null);
 
   const showHandymen = () => {
@@ -52,6 +56,7 @@ export const HandymenListTemplate: React.FC<Props> = ({activeCategoryName}) => {
                 numberOfReviews={item.numberOfReviews}
                 subCategories={item.subCategories}
                 hourlyRate={item.hourlyRate}
+                onPressChooseHandymanButton={onPressChooseHandymanButton}
               />
             </View>
           )}

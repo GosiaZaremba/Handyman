@@ -7,13 +7,13 @@ export default StyleSheet.create({
     paddingHorizontal: 15,
   },
   headerContainer: {
-    marginTop: 20,
+    marginTop: '15%',
   },
   offButton: {
-    marginTop: 11,
-    width: 32,
-    height: 32,
-    marginLeft: '85%',
+    marginTop: '12%',
+    width: 35,
+    height: 35,
+    marginLeft: '76%',
   },
   menuContainer: {
     borderWidth: 1,

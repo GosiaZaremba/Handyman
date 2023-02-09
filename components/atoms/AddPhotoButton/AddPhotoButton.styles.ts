@@ -4,7 +4,7 @@ import {Colors} from '../../../constants/colors';
 export default StyleSheet.create({
   pressed: {
     opacity: 0.9,
-    backgroundColor: 'white',
+    backgroundColor: Colors.font.white,
     borderRadius: 25,
     justifyContent: 'center',
     alignItems: 'center',
@@ -15,7 +15,7 @@ export default StyleSheet.create({
     height: 30,
   },
   pressable: {
-    backgroundColor: 'white',
+    backgroundColor: Colors.font.white,
     borderRadius: 25,
     justifyContent: 'center',
     alignItems: 'center',
@@ -25,5 +25,5 @@ export default StyleSheet.create({
     width: 30,
     height: 30,
   },
-  buttonIcon: {color: '#43b35d', fontSize: 26},
+  buttonIcon: {color: Colors.button.addPhoto, fontSize: 26},
 });

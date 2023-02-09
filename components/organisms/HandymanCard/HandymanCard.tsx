@@ -18,6 +18,7 @@ export type Props = {
   numberOfReviews: number;
   subCategories: any;
   hourlyRate: number;
+  onPressChooseHandymanButton: () => void;
 };
 
 export const HandymanCard: React.FC<Props> = ({
@@ -29,10 +30,8 @@ export const HandymanCard: React.FC<Props> = ({
   numberOfReviews,
   subCategories,
   hourlyRate,
+  onPressChooseHandymanButton,
 }) => {
-  const onPressChooseButton = () => {
-    console.log('choosing handyman');
-  };
   return (
     <CardWhite>
       <View>
@@ -57,7 +56,10 @@ export const HandymanCard: React.FC<Props> = ({
         <View style={styles.bottomContainer}>
           <HourlyRate hourlyRate={hourlyRate} />
           <View style={styles.buttonContainer}>
-            <ButtonGreen buttonText={'Choose'} onPress={onPressChooseButton} />
+            <ButtonGreen
+              buttonText={'Choose'}
+              onPress={onPressChooseHandymanButton}
+            />
           </View>
         </View>
       </View>

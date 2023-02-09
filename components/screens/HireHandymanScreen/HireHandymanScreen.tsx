@@ -2,26 +2,20 @@ import React from 'react';
 import {HireHandymanTemplate} from '../../templates';
 
 export type Props = {
-  isOnline: boolean;
-  photoUrl: any;
-  handymanName: string;
-  ratingNumber: number;
-  starRating: number;
-  numberOfReviews: number;
-  subCategories: any;
-  hourlyRate: number;
+  // isOnline: boolean;
+  // photoUrl: any;
+  // handymanName: string;
+  // ratingNumber: number;
+  // starRating: number;
+  // numberOfReviews: number;
+  // subCategories: any;
+  // hourlyRate: number;
+  route: any;
 };
 
-export const HireHandymanScreen: React.FC<Props> = ({
-  isOnline,
-  photoUrl,
-  handymanName,
-  ratingNumber,
-  starRating,
-  numberOfReviews,
-  subCategories,
-  hourlyRate,
-}) => {
+export const HireHandymanScreen: React.FC<Props> = ({route}) => {
+  const handymanInfo = route.params;
+
   const sendAppointmentForm = (
     selectedDate?: undefined | Date | string,
     selectedHours?: any,
@@ -42,14 +36,14 @@ export const HireHandymanScreen: React.FC<Props> = ({
     <HireHandymanTemplate
       sendAppointmentForm={sendAppointmentForm}
       onPressPrevious={onPressPrevious}
-      isOnline={isOnline}
-      photoUrl={photoUrl}
-      handymanName={handymanName}
-      ratingNumber={ratingNumber}
-      starRating={starRating}
-      numberOfReviews={numberOfReviews}
-      subCategories={subCategories}
-      hourlyRate={hourlyRate}
+      isOnline={route.params.isOnline}
+      photoUrl={route.params.photoUrl}
+      handymanName={route.params.handymanName}
+      ratingNumber={route.params.ratingNumber}
+      starRating={route.params.starRating}
+      numberOfReviews={route.params.numberOfReviews}
+      subCategories={route.params.subCategories}
+      hourlyRate={route.params.hourlyRate}
     />
   );
 };

@@ -8,8 +8,7 @@
 
 import React from 'react';
 import type {ReactNode} from 'react';
-import {StyleSheet, View} from 'react-native';
-import StorybookUIRoot from './storybook';
+// import StorybookUIRoot from './storybook';
 import {
   createNativeStackNavigator,
   NativeStackNavigationProp,
@@ -18,13 +17,7 @@ import {
   NavigationContainer,
   NavigatorScreenParams,
 } from '@react-navigation/native';
-import {
-  HandymenListScreen,
-  PickAHandymanScreen,
-  SignInScreen,
-  SignUpScreen,
-  DrawerScreen,
-} from './components/screens';
+import {SignInScreen, SignUpScreen, DrawerScreen} from './components/screens';
 
 /* $FlowFixMe[missing-local-annot] The type annotation(s) required by Flow's
  * LTI update could not be added via codemod */
@@ -35,6 +28,7 @@ export type RootTabParamList = {
   SignUp: undefined;
   PickAHandyman: undefined;
   HandymenList: undefined;
+  HireHandyman: undefined;
 };
 
 export type RootStackParamList = {
@@ -44,6 +38,7 @@ export type RootStackParamList = {
   SignUp: undefined;
   PickAHandyman: undefined;
   HandymenList: undefined;
+  HireHandyman: undefined;
 };
 
 export type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
@@ -60,8 +55,6 @@ const App: () => ReactNode = () => {
         <Stack.Screen name="DrawerScreen" component={DrawerScreen} />
         <Stack.Screen name="SignIn" component={SignInScreen} />
         <Stack.Screen name="SignUp" component={SignUpScreen} />
-        <Stack.Screen name="PickAHandyman" component={PickAHandymanScreen} />
-        <Stack.Screen name="HandymenList" component={HandymenListScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

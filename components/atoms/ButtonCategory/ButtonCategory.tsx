@@ -1,12 +1,12 @@
-import React, {useState} from 'react';
-import {Pressable, Image, View} from 'react-native';
+import React from 'react';
+import {Pressable, Image, View, ImageSourcePropType} from 'react-native';
 import {TextSmall} from '../TextSmall/TextSmall';
 import styles from './ButtonCategory.styles';
 import Icon from 'react-native-vector-icons/AntDesign';
 
 export type Props = {
   onPress?: () => void;
-  category: any;
+  category?: ImageSourcePropType | undefined;
   text: string;
   isActive: boolean;
 };

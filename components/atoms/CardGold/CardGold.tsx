@@ -1,10 +1,10 @@
-import React from 'react';
+import React, {ReactNode} from 'react';
 import styles from './CardGold.styles';
 import LinearGradient from 'react-native-linear-gradient';
 import {Colors} from '../../../constants/colors';
 
 export type Props = {
-  children?: any;
+  children?: ReactNode;
 };
 
 export const CardGold: React.FC<Props> = ({children}) => {

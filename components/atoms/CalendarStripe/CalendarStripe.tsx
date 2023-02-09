@@ -1,8 +1,6 @@
 import React, {useImperativeHandle, useRef, useState, forwardRef} from 'react';
-import {View} from 'react-native';
 import ReactNativeCalendarStrip from 'react-native-calendar-strip';
 import CalendarStrip from 'react-native-calendar-strip';
-import {Colors} from '../../../constants/colors';
 import styles from './CalendarStripe.styles';
 
 export type SelectedDateReference = {
@@ -31,7 +29,7 @@ const CalendarStripeWithReference: React.ForwardRefRenderFunction<
       showMonth={false}
       scrollerPaging={true}
       style={styles.calendar}
-      innerStyle={{flex: 1}}
+      innerStyle={styles.innerStyle}
       dateNumberStyle={styles.dateNumberStyle}
       dateNameStyle={styles.dateNameStyle}
       iconContainer={styles.iconContainer}
