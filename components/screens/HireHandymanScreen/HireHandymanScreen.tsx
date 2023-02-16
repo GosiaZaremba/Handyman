@@ -17,9 +17,14 @@ export const HireHandymanScreen: React.FC<Props> = ({route}) => {
   ) => {
     console.log(
       'Hire a Handyman with following data:',
+      'date: ',
       selectedDate,
+      'number of hours: ',
       selectedHours,
+      'reason for hire: ',
       reasonForHire,
+      'handyman id:',
+      handymanInfo.id,
     );
   };
   const onPressPrevious = () => {
