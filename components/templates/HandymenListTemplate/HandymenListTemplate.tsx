@@ -6,16 +6,16 @@ import {TextMedium} from '../../atoms';
 import {HandymanCard} from '../../organisms';
 import styles from './HandymenListTemplate.styles';
 import handymenList from '../../../assets/data/handymen';
+import {useNavigation} from '@react-navigation/native';
+import {DrawerNavProp} from '../DrawerTemplate/DrawerTemplate';
 
 export type Props = {
   activeCategoryName?: any;
-  onPressChooseHandymanButton: () => void;
 };
 
-export const HandymenListTemplate: React.FC<Props> = ({
-  activeCategoryName,
-  onPressChooseHandymanButton,
-}) => {
+export const HandymenListTemplate: React.FC<Props> = ({activeCategoryName}) => {
+  const navigation = useNavigation<DrawerNavProp>();
+
   const [newHandymenList, setNewHandymenList] = useState<any>(null);
 
   const showHandymen = () => {
@@ -59,7 +59,9 @@ export const HandymenListTemplate: React.FC<Props> = ({
                 numberOfReviews={item.numberOfReviews}
                 subCategories={item.subCategories}
                 hourlyRate={item.hourlyRate}
-                onPressChooseHandymanButton={onPressChooseHandymanButton}
+                onPressChooseHandymanButton={() => {
+                  navigation.navigate('HireHandyman', {item: item});
+                }}
               />
             </View>
           )}

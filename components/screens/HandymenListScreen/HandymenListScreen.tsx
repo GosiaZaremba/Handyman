@@ -8,14 +8,5 @@ export type Props = {
 export const HandymenListScreen: React.FC = ({route}) => {
   const activeCategoryName = route.params.activeCategoryName;
 
-  const onPressChooseHandymanButton = () => {
-    console.log('sialala');
-  };
-
-  return (
-    <HandymenListTemplate
-      activeCategoryName={activeCategoryName}
-      onPressChooseHandymanButton={onPressChooseHandymanButton}
-    />
-  );
+  return <HandymenListTemplate activeCategoryName={activeCategoryName} />;
 };
