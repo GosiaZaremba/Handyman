@@ -15,7 +15,7 @@ import styles from './AppointmentForm.styles';
 export type Props = {
   sendAppointmentForm: (
     selectedDate?: undefined | Date | string,
-    selectedHours?: any,
+    selectedHours?: unknown,
     reasonForHire?: string,
   ) => void;
   onPressPrevious: () => void;
@@ -66,7 +66,6 @@ export const AppointmentForm: React.FC<Props> = ({
         selectOptions={selectOptions}
         labelTextLarge={'SELECT HOURS   '}
         labelTextSmall={'(of Service you need)'}
-        placeholderValue={selectOptions[0].label}
         ref={selectedHoursReference}
       />
       <TextAreaWithLabel

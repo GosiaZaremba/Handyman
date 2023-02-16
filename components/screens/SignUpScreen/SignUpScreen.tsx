@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {SignUpTemplate} from '../../templates';
-import ImagePicker from 'react-native-image-crop-picker';
 import {useNavigation} from '@react-navigation/native';
 import {NavigationProp} from '../../../App';
+import {ImageSourcePropType} from 'react-native';
 
 export const SignUpScreen: React.FC = () => {
   const navigation = useNavigation<NavigationProp>();
@@ -10,7 +10,7 @@ export const SignUpScreen: React.FC = () => {
     fullName?: string,
     email?: string,
     password?: string,
-    photoValue?: any,
+    photoValue?: ImageSourcePropType | undefined,
   ) => {
     console.log('SignInScreen', fullName, email, password, photoValue);
     navigation.navigate('PickAHandyman');

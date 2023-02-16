@@ -1,7 +1,6 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react-native';
 import {HandymanCard} from './HandymanCard';
-import {action} from '@storybook/addon-actions';
 import {boolean, text, number} from '@storybook/addon-knobs';
 
 storiesOf('organisms/HandymanCard', module)
@@ -16,5 +15,8 @@ storiesOf('organisms/HandymanCard', module)
       numberOfReviews={number('number of reviews', 43)}
       subCategories={['Cleaning', 'Home Cleaning', 'Office Cleaning']}
       hourlyRate={75}
+      onPressChooseHandymanButton={() => {
+        console.log('Handyman Card stories');
+      }}
     />
   ));

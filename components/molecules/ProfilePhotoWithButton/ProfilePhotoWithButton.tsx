@@ -1,5 +1,5 @@
 import React, {useRef, useImperativeHandle, forwardRef, useState} from 'react';
-import {Alert, View} from 'react-native';
+import {Alert, ImageSourcePropType, View} from 'react-native';
 import ImageCropPicker from 'react-native-image-crop-picker';
 import {ProfilePhoto, AddPhotoButton} from '../../atoms';
 import styles from './ProfilePhotoWithButton.styles';
@@ -11,7 +11,7 @@ export type ProfilePhotoWithButtonReference = {
 export const ProfilePhotoWithButtonAndReference: React.ForwardRefRenderFunction<
   ProfilePhotoWithButtonReference
 > = ({}, ref) => {
-  const [photo, setPhoto] = useState<any>(
+  const [photo, setPhoto] = useState<ImageSourcePropType | undefined>(
     require('../../../assets/jpg/profile_photo.jpg'),
   );
   const profilePhotoReference = useRef<ProfilePhotoWithButtonReference>(null);

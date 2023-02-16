@@ -2,7 +2,7 @@ import React from 'react';
 import {storiesOf} from '@storybook/react-native';
 import {Link} from './Link';
 import {Colors} from '../../../constants/colors';
-import {text, color, object} from '@storybook/addon-knobs';
+import {text, color} from '@storybook/addon-knobs';
 import {action} from '@storybook/addon-actions';
 
 storiesOf('atoms/Link', module)

@@ -40,4 +40,5 @@ export const Colors = {
     highlight: '#ecf7f1',
   },
   black: '#000000',
+  profilePhotoBackground: 'rgba(255,255,255,.4)',
 };

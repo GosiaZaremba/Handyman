@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react';
 import {FlatList, View} from 'react-native';
 import {CategoryCard} from '../CategoryCard/CategoryCard';

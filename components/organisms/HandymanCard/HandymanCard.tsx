@@ -1,5 +1,5 @@
 import React from 'react';
-import {View} from 'react-native';
+import {ImageSourcePropType, View} from 'react-native';
 import {ButtonGreen, CardWhite, Divider, HandymanName} from '../../atoms';
 import {
   HandymanProfilePhotoWithStatus,
@@ -11,12 +11,12 @@ import styles from './HandymanCard.styles';
 
 export type Props = {
   isOnline: boolean;
-  photoUrl: any;
+  photoUrl: ImageSourcePropType | undefined;
   handymanName: string;
   ratingNumber: number;
   starRating: number;
   numberOfReviews: number;
-  subCategories: any;
+  subCategories: unknown;
   hourlyRate: number;
   onPressChooseHandymanButton: () => void;
 };

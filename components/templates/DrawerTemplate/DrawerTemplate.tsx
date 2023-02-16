@@ -1,5 +1,8 @@
 import React from 'react';
-import {createDrawerNavigator} from '@react-navigation/drawer';
+import {
+  createDrawerNavigator,
+  DrawerNavigationProp,
+} from '@react-navigation/drawer';
 import {
   HandymenListScreen,
   HireHandymanScreen,
@@ -8,13 +11,32 @@ import {
 } from '../../screens';
 import styles from './DrawerTemplate.styles';
 import {DrawerContent} from '../../organisms/DrawerContent/DrawerContent';
+import {ImageSourcePropType} from 'react-native';
+import {NavigatorScreenParams} from '@react-navigation/native';
 
 export type Props = {
-  photoUrl: any;
+  photoUrl: ImageSourcePropType | undefined;
   userName: string;
   userLocation: string;
   onPressLogOut: () => void;
 };
+
+export type DrawerTabParamList = {
+  WelcomeScreen: undefined;
+  PickAHandyman: undefined;
+  HandymenList: undefined;
+  HireHandyman: undefined;
+};
+
+export type DrawerParamList = {
+  Root: NavigatorScreenParams<DrawerTabParamList>;
+  WelcomeScreen: undefined;
+  PickAHandyman: undefined;
+  HandymenList: undefined;
+  HireHandyman: undefined;
+};
+
+export type DrawerNavProp = DrawerNavigationProp<DrawerParamList>;
 
 const Drawer = createDrawerNavigator();
 
@@ -39,15 +61,17 @@ export const DrawerTemplate: React.FC<Props> = ({
       screenOptions={{
         swipeEnabled: true,
         drawerPosition: 'left',
-        headerStyle: styles.headerStyle,
         headerTitleStyle: styles.headerTitleStyle,
         drawerStyle: styles.drawerStyle,
         headerShown: false,
       }}>
-      <Drawer.Screen name="Welcome Screen" component={WelcomeScreen} />
-      <Drawer.Screen name="PickAHandyman" component={PickAHandymanScreen} />
-      <Drawer.Screen name="HandymenList" component={HandymenListScreen} />
-      <Drawer.Screen name="HireHandyman" component={HireHandymanScreen} />
+      <Drawer.Screen name="WelcomeScreen" component={WelcomeScreen} />
+      <Drawer.Screen
+        name="PickAHandymanScreen"
+        component={PickAHandymanScreen}
+      />
+      <Drawer.Screen name="HandymenListScreen" component={HandymenListScreen} />
+      <Drawer.Screen name="HireHandymanScreen" component={HireHandymanScreen} />
     </Drawer.Navigator>
   );
 };

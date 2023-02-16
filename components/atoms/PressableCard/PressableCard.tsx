@@ -4,7 +4,7 @@ import styles from './PressableCard.styles';
 
 export type Props = {
   onPress: () => void;
-  children: any;
+  children?: React.FC;
 };
 
 export const PressableCard: React.FC<Props> = ({onPress, children}) => {

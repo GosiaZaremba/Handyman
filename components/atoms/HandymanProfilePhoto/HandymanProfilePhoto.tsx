@@ -1,11 +1,11 @@
 import React from 'react';
-import {View, Image} from 'react-native';
+import {Image, ImageSourcePropType} from 'react-native';
 import styles from './HandymanProfilePhoto.styles';
 
 export type Props = {
-  photoUrl: any;
+  photoUrl: ImageSourcePropType | undefined;
 };
 
 export const HandymanProfilePhoto: React.FC<Props> = ({photoUrl}) => {
-  return <Image source={photoUrl} style={styles.image}></Image>;
+  return <Image source={photoUrl} style={styles.image} />;
 };

@@ -1,7 +1,6 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react-native';
 import {HandymanAppointmentCard} from './HandymanAppointmentCard';
-import {action} from '@storybook/addon-actions';
 import {boolean, text, number} from '@storybook/addon-knobs';
 
 storiesOf('organisms/HandymanAppointmentCard', module)
