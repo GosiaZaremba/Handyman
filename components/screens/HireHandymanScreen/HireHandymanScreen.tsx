@@ -7,7 +7,8 @@ export type Props = {
 };
 
 export const HireHandymanScreen: React.FC<Props> = ({route}) => {
-  const handymanInfo = route.params;
+  const handymanInfo = route.params.item;
+  console.log(handymanInfo);
 
   const sendAppointmentForm = (
     selectedDate?: undefined | Date | string,
@@ -30,9 +31,9 @@ export const HireHandymanScreen: React.FC<Props> = ({route}) => {
       sendAppointmentForm={sendAppointmentForm}
       onPressPrevious={onPressPrevious}
       isOnline={handymanInfo.isOnline}
-      photoUrl={handymanInfo.photoUrl}
-      handymanName={handymanInfo.handymanName}
-      ratingNumber={handymanInfo.ratingNumber}
+      photoUrl={handymanInfo.photo}
+      handymanName={handymanInfo.name}
+      ratingNumber={handymanInfo.starRating}
       starRating={handymanInfo.starRating}
       numberOfReviews={handymanInfo.numberOfReviews}
       subCategories={handymanInfo.subCategories}

@@ -4,10 +4,4 @@ import {HandymenListTemplate} from './HandymenListTemplate';
 
 storiesOf('templates/HandymenListTemplate', module)
   .addDecorator(story => story())
-  .add('default', () => (
-    <HandymenListTemplate
-      onPressChooseHandymanButton={() => {
-        console.log('handymen list template stories');
-      }}
-    />
-  ));
+  .add('default', () => <HandymenListTemplate />);
