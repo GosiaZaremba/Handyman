@@ -1,3 +1,4 @@
+import {useNavigation} from '@react-navigation/native';
 import React, {useRef} from 'react';
 import {View} from 'react-native';
 import {Colors} from '../../../constants/colors';
@@ -10,6 +11,7 @@ import {
   DropdownSelectWithLabel,
   TextAreaWithLabel,
 } from '../../molecules';
+import {DrawerNavProp} from '../../templates/DrawerTemplate/DrawerTemplate';
 import styles from './AppointmentForm.styles';
 
 export type Props = {
@@ -25,6 +27,8 @@ export const AppointmentForm: React.FC<Props> = ({
   sendAppointmentForm,
   onPressPrevious,
 }) => {
+  const navigaion = useNavigation<DrawerNavProp>();
+
   const selectOptions = [
     {label: '1 hour', value: 1},
     {label: '2 hours', value: 2},
@@ -53,6 +57,11 @@ export const AppointmentForm: React.FC<Props> = ({
     }
   };
 
+  const onPressPreviousButton = () => {
+    navigaion.navigate('HandymenList');
+    onPressPrevious();
+  };
+
   return (
     <View>
       <CalendarStripeWithLabel
@@ -79,7 +88,7 @@ export const AppointmentForm: React.FC<Props> = ({
           <ButtonGreenIconFirst
             buttonText={'Previous'}
             iconName={'arrowleft'}
-            onPress={onPressPrevious}
+            onPress={onPressPreviousButton}
           />
         </View>
         <View style={styles.buttonContainer}>

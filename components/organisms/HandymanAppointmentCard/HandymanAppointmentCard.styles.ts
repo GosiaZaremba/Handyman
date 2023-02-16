@@ -6,15 +6,10 @@ export default StyleSheet.create({
     justifyContent: 'space-between',
     margin: 10,
   },
-  profilePhotoContainer: {
-    justifyContent: 'center',
-  },
-  reviewsContainer: {
-    width: '80%',
-    marginLeft: 15,
-  },
-  bottomContainer: {
-    marginLeft: '27%',
-    marginBottom: 10,
+  rightContainer: {
+    flex: 1,
+    height: 110,
+    paddingLeft: 15,
+    justifyContent: 'space-between',
   },
 });

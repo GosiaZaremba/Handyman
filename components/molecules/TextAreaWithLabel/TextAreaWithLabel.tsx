@@ -1,7 +1,7 @@
 import React, {useRef, useImperativeHandle, forwardRef} from 'react';
 import {View} from 'react-native';
 
-import {TextArea, TextAreaReference, TextMedium} from '../../atoms';
+import {TextArea, TextAreaReference, TextSmall} from '../../atoms';
 import styles from './TextAreaWithLabel.styles';
 
 export type Props = {
@@ -37,7 +37,7 @@ const TextAreaWithLabelAndReference: React.ForwardRefRenderFunction<
   return (
     <View style={styles.container}>
       <View style={styles.labelContainer}>
-        <TextMedium text={labelText} fontColor={fontColor} />
+        <TextSmall text={labelText} fontColor={fontColor} />
       </View>
       <TextArea placeholder={placeholder} ref={textAreaReference} />
     </View>

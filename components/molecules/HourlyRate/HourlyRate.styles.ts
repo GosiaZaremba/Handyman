@@ -4,13 +4,13 @@ import {Colors} from '../../../constants/colors';
 export default StyleSheet.create({
   container: {
     flexDirection: 'row',
-    width: 105,
+    width: 82,
     justifyContent: 'space-between',
     alignItems: 'center',
   },
   text: {
-    fontSize: 12,
-    fontFamily: 'OpenSans-Bold',
+    fontSize: 10,
+    fontFamily: 'OpenSans-Regular',
     lineHeight: 20,
     textAlign: 'center',
     color: Colors.font.darkGrey,
