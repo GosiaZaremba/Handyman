@@ -29,31 +29,27 @@ export const HandymanAppointmentCard: React.FC<Props> = ({
   numberOfReviews,
   subCategories,
   hourlyRate,
-}) => {
-  return (
-    <CardWhite>
+}) => (
+  <CardWhite>
+    <View style={styles.topContainer}>
       <View>
-        <View style={styles.topContainer}>
-          <View style={styles.profilePhotoContainer}>
-            <HandymanProfilePhotoWithStatus
-              photoUrl={photoUrl}
-              isOnline={isOnline}
-            />
-          </View>
-          <View style={styles.reviewsContainer}>
-            <HandymanName text={handymanName} />
-            <RatingReviews
-              ratingNumber={ratingNumber}
-              starRating={starRating}
-              numberOfReviews={numberOfReviews}
-            />
-            <SubCategoryList subCategories={subCategories} />
-          </View>
-        </View>
-        <View style={styles.bottomContainer}>
-          <HourlyRate hourlyRate={hourlyRate} />
-        </View>
+        <HandymanProfilePhotoWithStatus
+          photoUrl={photoUrl}
+          isOnline={isOnline}
+        />
       </View>
-    </CardWhite>
-  );
-};
+      <View style={styles.rightContainer}>
+        <View>
+          <HandymanName text={handymanName} />
+          <RatingReviews
+            ratingNumber={ratingNumber}
+            starRating={starRating}
+            numberOfReviews={numberOfReviews}
+          />
+          <SubCategoryList subCategories={subCategories} />
+        </View>
+        <HourlyRate hourlyRate={hourlyRate} />
+      </View>
+    </View>
+  </CardWhite>
+);

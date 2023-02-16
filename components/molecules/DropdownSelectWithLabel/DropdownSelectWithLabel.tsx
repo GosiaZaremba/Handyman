@@ -2,12 +2,7 @@
 import React, {forwardRef, useImperativeHandle, useRef} from 'react';
 import {View} from 'react-native';
 import {Colors} from '../../../constants/colors';
-import {
-  DropdownSelectReference,
-  DropdownSelect,
-  TextMedium,
-  TextSmall,
-} from '../../atoms';
+import {DropdownSelectReference, DropdownSelect, TextSmall} from '../../atoms';
 import styles from './DropdownSelectWithLabel.styles';
 
 export type Props = {
@@ -34,7 +29,7 @@ const DropdownSelectWithLabelAndReference: React.ForwardRefRenderFunction<
   return (
     <View>
       <View style={styles.labelContainer}>
-        <TextMedium text={labelTextLarge} fontColor={Colors.font.darkGrey} />
+        <TextSmall text={labelTextLarge} fontColor={Colors.font.darkGrey} />
         <TextSmall text={labelTextSmall} fontColor={Colors.font.darkGrey} />
       </View>
       <DropdownSelect

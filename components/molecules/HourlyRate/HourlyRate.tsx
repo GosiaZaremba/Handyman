@@ -11,7 +11,7 @@ export const HourlyRate: React.FC<Props> = ({hourlyRate}) => {
   return (
     <View style={styles.container}>
       <DollarIcon />
-      <Text style={styles.text}>{`${hourlyRate} USD/hour`}</Text>
+      <Text style={styles.text}>{`${hourlyRate} USD/ hour`}</Text>
     </View>
   );
 };

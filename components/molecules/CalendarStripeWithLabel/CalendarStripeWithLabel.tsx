@@ -7,7 +7,7 @@ import {
   CalendarStripe,
   FAIcon,
   SelectedDateReference,
-  TextMedium,
+  TextSmall,
 } from '../../atoms';
 
 export type Props = {
@@ -36,7 +36,7 @@ const CalendarStripeWithLabelReference: React.ForwardRefRenderFunction<
   return (
     <>
       <View style={styles.labelContainer}>
-        <TextMedium text={labelText} fontColor={Colors.font.darkGrey} />
+        <TextSmall text={labelText} fontColor={Colors.font.darkGrey} />
         <FAIcon iconName={iconName} iconColor={iconColor} iconSize={iconSize} />
       </View>
       <CalendarStripe ref={dateReference} />
