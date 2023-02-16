@@ -1,15 +1,15 @@
 import React from 'react';
-import {View, Image} from 'react-native';
+import {View, Image, ImageSourcePropType} from 'react-native';
 import styles from './ProfilePhoto.styles';
 
 export type Props = {
-  photoUrl: any;
+  photoUrl: ImageSourcePropType | undefined;
 };
 
 export const ProfilePhoto: React.FC<Props> = ({photoUrl}) => {
   return (
-    <View style={styles.imageContainer}>
-      <Image source={photoUrl} style={styles.image}></Image>
+    <View>
+      <Image source={photoUrl} style={styles.image} />
     </View>
   );
 };

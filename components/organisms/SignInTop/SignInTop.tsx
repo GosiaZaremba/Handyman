@@ -1,7 +1,7 @@
 import React from 'react';
 import {View} from 'react-native';
 import {Colors} from '../../../constants/colors';
-import {ProfilePhoto, TextMedium} from '../../atoms';
+import {TextMedium} from '../../atoms';
 import styles from './SignInTop.styles';
 
 export type Props = {

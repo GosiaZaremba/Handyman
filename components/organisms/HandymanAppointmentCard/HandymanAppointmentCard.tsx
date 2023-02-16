@@ -1,6 +1,6 @@
 import React from 'react';
-import {View} from 'react-native';
-import {ButtonGreen, CardWhite, Divider, HandymanName} from '../../atoms';
+import {ImageSourcePropType, View} from 'react-native';
+import {CardWhite, HandymanName} from '../../atoms';
 import {
   HandymanProfilePhotoWithStatus,
   HourlyRate,
@@ -11,12 +11,12 @@ import styles from './HandymanAppointmentCard.styles';
 
 export type Props = {
   isOnline: boolean;
-  photoUrl: any;
+  photoUrl: ImageSourcePropType | undefined;
   handymanName: string;
   ratingNumber: number;
   starRating: number;
   numberOfReviews: number;
-  subCategories: any;
+  subCategories: unknown;
   hourlyRate: number;
 };
 
@@ -30,9 +30,6 @@ export const HandymanAppointmentCard: React.FC<Props> = ({
   subCategories,
   hourlyRate,
 }) => {
-  const onPressChooseButton = () => {
-    console.log('choosing handyman');
-  };
   return (
     <CardWhite>
       <View>

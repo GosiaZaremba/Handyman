@@ -23,4 +23,7 @@ export default StyleSheet.create({
     fontFamily: 'OpenSans-Regular',
     color: Colors.black,
   },
+  focused: {
+    borderColor: Colors.font.white,
+  },
 });

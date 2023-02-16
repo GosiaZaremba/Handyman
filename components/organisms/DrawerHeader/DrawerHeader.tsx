@@ -1,12 +1,12 @@
 import React from 'react';
-import {View} from 'react-native';
+import {ImageSourcePropType, View} from 'react-native';
 import {Colors} from '../../../constants/colors';
 import {ProfilePhoto, TextLarge, TextSmall} from '../../atoms';
 import styles from './DrawerHeader.styles';
 import IoniconsIcon from 'react-native-vector-icons/Ionicons';
 
 export type Props = {
-  photoUrl: any;
+  photoUrl: ImageSourcePropType | undefined;
   userName: string;
   userLocation: string;
 };

@@ -1,7 +1,6 @@
 import React from 'react';
-import {View, Text} from 'react-native';
-import {Colors} from '../../../constants/colors';
-import {CardGrey, TextSmall} from '../../atoms';
+import {Text} from 'react-native';
+import {CardGrey} from '../../atoms';
 import styles from './CategoryCard.styles';
 
 export type Props = {
@@ -11,7 +10,7 @@ export type Props = {
 export const CategoryCard: React.FC<Props> = ({text}) => {
   return (
     <CardGrey>
-      <Text style={styles.text}>{text}</Text>
+      <Text style={styles.categoryName}>{text}</Text>
     </CardGrey>
   );
 };

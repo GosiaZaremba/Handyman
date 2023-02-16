@@ -2,7 +2,6 @@ import React from 'react';
 import {storiesOf} from '@storybook/react-native';
 import {DropdownSelectWithLabel} from './DropdownSelectWithLabel';
 import {text} from '@storybook/addon-knobs';
-import {Colors} from '../../../constants/colors';
 
 const selectOptions = [
   {label: '1 hour', value: 1},
@@ -19,6 +18,5 @@ storiesOf('molecules/DropdownSelectWithLabel', module)
       selectOptions={selectOptions}
       labelTextLarge={text('labelTextLarge', 'SELECT HOURS   ')}
       labelTextSmall={text('labelTextSmall', '(of Service you need)')}
-      placeholderValue={selectOptions[0].label}
     />
   ));

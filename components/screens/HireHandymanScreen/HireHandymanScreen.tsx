@@ -1,15 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react';
 import {HireHandymanTemplate} from '../../templates';
 
 export type Props = {
-  // isOnline: boolean;
-  // photoUrl: any;
-  // handymanName: string;
-  // ratingNumber: number;
-  // starRating: number;
-  // numberOfReviews: number;
-  // subCategories: any;
-  // hourlyRate: number;
   route: any;
 };
 
@@ -36,14 +29,14 @@ export const HireHandymanScreen: React.FC<Props> = ({route}) => {
     <HireHandymanTemplate
       sendAppointmentForm={sendAppointmentForm}
       onPressPrevious={onPressPrevious}
-      isOnline={route.params.isOnline}
-      photoUrl={route.params.photoUrl}
-      handymanName={route.params.handymanName}
-      ratingNumber={route.params.ratingNumber}
-      starRating={route.params.starRating}
-      numberOfReviews={route.params.numberOfReviews}
-      subCategories={route.params.subCategories}
-      hourlyRate={route.params.hourlyRate}
+      isOnline={handymanInfo.isOnline}
+      photoUrl={handymanInfo.photoUrl}
+      handymanName={handymanInfo.handymanName}
+      ratingNumber={handymanInfo.ratingNumber}
+      starRating={handymanInfo.starRating}
+      numberOfReviews={handymanInfo.numberOfReviews}
+      subCategories={handymanInfo.subCategories}
+      hourlyRate={handymanInfo.hourlyRate}
     />
   );
 };

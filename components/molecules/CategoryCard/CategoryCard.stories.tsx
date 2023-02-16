@@ -1,7 +1,6 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react-native';
 import {CategoryCard} from './CategoryCard';
-import {action} from '@storybook/addon-actions';
 import {text} from '@storybook/addon-knobs';
 
 storiesOf('molecules/CategoryCard', module)

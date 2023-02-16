@@ -17,7 +17,15 @@ import {
   NavigationContainer,
   NavigatorScreenParams,
 } from '@react-navigation/native';
-import {SignInScreen, SignUpScreen, DrawerScreen} from './components/screens';
+import {
+  SignInScreen,
+  SignUpScreen,
+  DrawerScreen,
+  WelcomeScreen,
+  PickAHandymanScreen,
+  HandymenListScreen,
+  HireHandymanScreen,
+} from './components/screens';
 
 /* $FlowFixMe[missing-local-annot] The type annotation(s) required by Flow's
  * LTI update could not be added via codemod */
@@ -55,6 +63,10 @@ const App: () => ReactNode = () => {
         <Stack.Screen name="DrawerScreen" component={DrawerScreen} />
         <Stack.Screen name="SignIn" component={SignInScreen} />
         <Stack.Screen name="SignUp" component={SignUpScreen} />
+        <Stack.Screen name="Welcome Screen" component={WelcomeScreen} />
+        <Stack.Screen name="PickAHandyman" component={PickAHandymanScreen} />
+        <Stack.Screen name="HandymenList" component={HandymenListScreen} />
+        <Stack.Screen name="HireHandyman" component={HireHandymanScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

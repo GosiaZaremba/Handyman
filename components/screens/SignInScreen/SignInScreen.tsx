@@ -1,12 +1,13 @@
 import {useNavigation} from '@react-navigation/native';
-import React, {useState} from 'react';
+import React from 'react';
+import {NavigationProp} from '../../../App';
 import {SignInTemplate} from '../../templates';
+import data from '../../../assets/data/handymen.js';
 
 export const SignInScreen: React.FC = () => {
-  const navigation = useNavigation<any>();
-  const [photo, setPhoto] = useState<any>(
-    require('../../../assets/jpg/profile_photo.jpg'),
-  );
+  const navigation = useNavigation<NavigationProp>();
+
+  const photo = data[5].photo.uri;
   const onPressSignIn = (email?: string, password?: string) => {
     console.log('SignInScreen', email, password);
     navigation.navigate('PickAHandyman');

@@ -1,12 +1,12 @@
 import React from 'react';
-import {ImageBackground, View} from 'react-native';
+import {ImageBackground, ImageSourcePropType, View} from 'react-native';
 import {OffButton} from '../../molecules';
 import {DrawerHeader} from '../DrawerHeader/DrawerHeader';
 import {DrawerMainItems} from '../DrawerMainItems/DrawerMainItems';
 import styles from './DrawerContent.styles';
 
 export type Props = {
-  photoUrl: any;
+  photoUrl: ImageSourcePropType | undefined;
   userName: string;
   userLocation: string;
   onPressLogOut: () => void;

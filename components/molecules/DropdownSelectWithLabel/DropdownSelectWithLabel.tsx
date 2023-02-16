@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, {forwardRef, useImperativeHandle, useRef} from 'react';
 import {View} from 'react-native';
 import {Colors} from '../../../constants/colors';
@@ -13,7 +14,6 @@ export type Props = {
   selectOptions: any;
   labelTextLarge: string;
   labelTextSmall: string;
-  placeholderValue: string;
 };
 
 export type DropdownSelectWithLabelReference = {
@@ -23,10 +23,7 @@ export type DropdownSelectWithLabelReference = {
 const DropdownSelectWithLabelAndReference: React.ForwardRefRenderFunction<
   DropdownSelectWithLabelReference,
   Props
-> = (
-  {selectOptions, labelTextLarge, labelTextSmall, placeholderValue},
-  ref,
-) => {
+> = ({selectOptions, labelTextLarge, labelTextSmall}, ref) => {
   const selectReference = useRef<DropdownSelectReference>(null);
 
   useImperativeHandle(ref, () => ({

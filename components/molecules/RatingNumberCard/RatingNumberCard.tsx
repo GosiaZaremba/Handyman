@@ -1,7 +1,7 @@
 import React from 'react';
 import {View} from 'react-native';
 import {Colors} from '../../../constants/colors';
-import {CardGold, TextSmall, TextMedium} from '../../atoms';
+import {CardGold, TextSmall} from '../../atoms';
 import styles from './RatingNumberCard.styles';
 
 export type Props = {

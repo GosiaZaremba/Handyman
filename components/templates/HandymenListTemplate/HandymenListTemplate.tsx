@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, {useEffect, useState} from 'react';
 import {ImageBackground, View, FlatList} from 'react-native';
 import {Colors} from '../../../constants/colors';
@@ -7,7 +8,7 @@ import styles from './HandymenListTemplate.styles';
 import handymenList from '../../../assets/data/handymen';
 
 export type Props = {
-  activeCategoryName?: string;
+  activeCategoryName?: any;
   onPressChooseHandymanButton: () => void;
 };
 
@@ -26,7 +27,9 @@ export const HandymenListTemplate: React.FC<Props> = ({
 
   useEffect(() => {
     showHandymen();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeCategoryName]);
+  console.log(activeCategoryName);
 
   return (
     <ImageBackground

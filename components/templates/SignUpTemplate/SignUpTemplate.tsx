@@ -10,7 +10,7 @@ export type Props = {
     email?: string,
     password?: string,
     fullName?: string,
-    photoValue?: any,
+    photoValue?: unknown,
   ) => void;
   onPressFacebook: () => void;
   onPressTwitter: () => void;

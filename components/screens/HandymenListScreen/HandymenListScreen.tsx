@@ -1,19 +1,15 @@
 import React from 'react';
 import {HandymenListTemplate} from '../../templates';
-import {NavigationProp, useNavigation} from '@react-navigation/native';
 
 export type Props = {
-  route: any;
+  route: unknown;
 };
 
-export const HandymenListScreen: React.FC<Props> = ({route}) => {
-  // const navigation = useNavigation<NavigationProp>();
-
+export const HandymenListScreen: React.FC = ({route}) => {
   const activeCategoryName = route.params.activeCategoryName;
-  console.log(activeCategoryName);
 
   const onPressChooseHandymanButton = () => {
-    // navigation.navigate('HireHandyman')
+    console.log('sialala');
   };
 
   return (

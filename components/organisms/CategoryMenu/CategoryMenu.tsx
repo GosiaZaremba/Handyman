@@ -1,23 +1,23 @@
 import {useNavigation} from '@react-navigation/native';
-import React, {useState, useRef} from 'react';
+import React, {useState} from 'react';
 import {View} from 'react-native';
 import {ButtonCategory, ButtonGreenIcon} from '../../atoms';
+import {DrawerNavProp} from '../../templates/DrawerTemplate/DrawerTemplate';
 import styles from './CategoryMenu.styles';
 
-export type Props = {};
-
-export const CategoryMenu: React.FC<Props> = () => {
-  const navigation = useNavigation<any>();
+export const CategoryMenu: React.FC = () => {
+  const navigation = useNavigation<DrawerNavProp>();
 
   const [activeCategoryName, setActiveCategoryName] = useState<string>('');
 
   const onPressCategory = (name: string) => {
     setActiveCategoryName(name);
+    console.log(activeCategoryName);
   };
 
   const onPressNext = () =>
-    navigation.navigate('HandymenList', {
-      activeCategoryName,
+    navigation.navigate('HandymenListScreen', {
+      activeCategoryName: activeCategoryName,
     });
 
   return (
