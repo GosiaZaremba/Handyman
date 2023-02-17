@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Atom buttonGreenIcon Component Snapshot 1`] = `
+<BVLinearGradient
+  colors={
+    Array [
+      4278363496,
+      4285643865,
+    ]
+  }
+  endPoint={
+    Object {
+      "x": 1,
+      "y": 0.5,
+    }
+  }
+  locations={null}
+  startPoint={
+    Object {
+      "x": 0,
+      "y": 0.5,
+    }
+  }
+  style={
+    Object {
+      "borderRadius": 10,
+      "elevation": 8,
+      "height": 40,
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-evenly",
+        "opacity": 0.8,
+      }
+    }
+    testID="atom-buttonGreen"
+  >
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "fontFamily": "OpenSans-Bold",
+        }
+      }
+    >
+      Button Green
+    </Text>
+    <Text
+      allowFontScaling={false}
+      selectable={false}
+      style={
+        Array [
+          Object {
+            "color": undefined,
+            "fontSize": 12,
+          },
+          Object {
+            "color": "#fff",
+            "fontSize": 18,
+          },
+          Object {
+            "fontFamily": "anticon",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</BVLinearGradient>
+`;

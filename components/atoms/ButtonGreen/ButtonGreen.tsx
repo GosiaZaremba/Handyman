@@ -7,9 +7,16 @@ import {Colors} from '../../../constants/colors';
 export type Props = {
   buttonText: string;
   onPress: () => void;
+  testID?: string;
+  testOnly_pressed?: boolean;
 };
 
-export const ButtonGreen: React.FC<Props> = ({buttonText, onPress}) => {
+export const ButtonGreen: React.FC<Props> = ({
+  buttonText,
+  onPress,
+  testID,
+  testOnly_pressed,
+}) => {
   return (
     <LinearGradient
       colors={[Colors.button.light, Colors.button.dark]}
@@ -18,7 +25,9 @@ export const ButtonGreen: React.FC<Props> = ({buttonText, onPress}) => {
       style={styles.gradient}>
       <Pressable
         style={({pressed}) => (pressed ? styles.pressed : styles.pressable)}
-        onPress={onPress}>
+        onPress={onPress}
+        testID={testID}
+        testOnly_pressed={testOnly_pressed}>
         <Text style={styles.buttonText}>{buttonText}</Text>
       </Pressable>
     </LinearGradient>
