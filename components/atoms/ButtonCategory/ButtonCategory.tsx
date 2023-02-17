@@ -9,6 +9,8 @@ export type Props = {
   category?: ImageSourcePropType | undefined;
   text: string;
   isActive: boolean;
+  testID?: string;
+  testOnly_pressed?: boolean;
 };
 
 export const ButtonCategory: React.FC<Props> = ({
@@ -16,13 +18,17 @@ export const ButtonCategory: React.FC<Props> = ({
   text,
   onPress,
   isActive,
+  testID,
+  testOnly_pressed,
 }) => {
   return (
     <View style={styles.container}>
       <Pressable
+        testID={testID}
         hitSlop={5}
         style={isActive ? styles.pressed : styles.pressable}
-        onPress={onPress}>
+        onPress={onPress}
+        testOnly_pressed={testOnly_pressed}>
         <View style={styles.iconContainer}>
           <Icon
             name={'checkcircle'}

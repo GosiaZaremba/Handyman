@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Atom ButtonCategory Component Snapshot 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "borderRadius": 10,
+      "elevation": 8,
+      "height": 95,
+      "justifyContent": "center",
+      "width": 120,
+    }
+  }
+>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    hitSlop={5}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgba(0,184,117,.1)",
+        "borderColor": "#00b875",
+        "borderRadius": 10,
+        "borderWidth": 1,
+        "height": 95,
+        "justifyContent": "center",
+        "width": 120,
+      }
+    }
+    testID="atom-buttonCategory"
+  >
+    <View
+      style={
+        Object {
+          "alignSelf": "flex-end",
+          "height": 14,
+        }
+      }
+    >
+      <Text
+        allowFontScaling={false}
+        selectable={false}
+        style={
+          Array [
+            Object {
+              "color": undefined,
+              "fontSize": 12,
+            },
+            Object {
+              "color": "#00b875",
+              "fontSize": 14,
+              "marginRight": 7,
+            },
+            Object {
+              "fontFamily": "anticon",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            Object {},
+          ]
+        }
+      >
+        
+      </Text>
+    </View>
+    <Image
+      source={
+        Object {
+          "testUri": "../../../assets/png/05_icons_cleaning.png",
+        }
+      }
+      style={
+        Object {
+          "height": 40,
+          "width": 40,
+          "zIndex": 1,
+        }
+      }
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "OpenSans-Regular",
+            "fontSize": 12,
+            "lineHeight": 20,
+            "textAlign": "center",
+          },
+          Object {
+            "color": "black",
+          },
+        ]
+      }
+    >
+      Laundry
+    </Text>
+  </View>
+</View>
+`;

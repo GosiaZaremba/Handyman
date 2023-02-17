@@ -9,12 +9,16 @@ export type Props = {
   buttonText: string;
   onPress: () => void;
   iconName: string;
+  testID?: string;
+  testOnly_pressed?: boolean;
 };
 
 export const ButtonGreenIcon: React.FC<Props> = ({
   buttonText,
   onPress,
   iconName,
+  testID,
+  testOnly_pressed,
 }) => {
   return (
     <LinearGradient
@@ -23,6 +27,8 @@ export const ButtonGreenIcon: React.FC<Props> = ({
       end={{x: 1, y: 0.5}}
       style={styles.gradient}>
       <Pressable
+        testID={testID}
+        testOnly_pressed={testOnly_pressed}
         style={({pressed}) => (pressed ? styles.pressed : styles.pressable)}
         onPress={onPress}>
         <Text style={styles.buttonText}>{buttonText}</Text>

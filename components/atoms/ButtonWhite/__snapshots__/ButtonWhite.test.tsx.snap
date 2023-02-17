@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Atom buttonWhite Component Snapshot 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "borderRadius": 10,
+      "elevation": 8,
+      "height": 45,
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#fff",
+        "borderRadius": 10,
+        "height": 45,
+        "justifyContent": "center",
+        "opacity": 0.8,
+        "width": "100%",
+      }
+    }
+    testID="atom-buttonWhite"
+  >
+    <Text
+      style={
+        Object {
+          "color": "#44b35e",
+          "fontFamily": "OpenSans-Bold",
+        }
+      }
+    >
+      Button White
+    </Text>
+  </View>
+</View>
+`;
