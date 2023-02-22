@@ -16,16 +16,17 @@ describe('Atom calendarStripe', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  test('ensure date is got correctly', () => {
+  test('ensure date is extracted and passed correctly', () => {
     const calendarRef = React.createRef<SelectedDateReference>();
     const {getByTestId} = render(
-      <CalendarStripe testID="atom-calendarStripe" />,
+      <CalendarStripe testID="atom-calendarStripe" ref={calendarRef} />,
     );
     const calendarStripe = getByTestId('atom-calendarStripe');
-    fireEvent(calendarStripe.props.children.props, 'dateSelected', {
-      date: new Date(),
-    });
-    expect(calendarRef.current?.getValue()).toBe(new Date());
-    console.log(calendarStripe.props.children.props.onDateSelected);
+    fireEvent(
+      calendarStripe.props.children,
+      'onDateSelected',
+      '2023-02-22T20:15:24.192Z',
+    );
+    expect(calendarRef.current?.getValue()).toBe('2023-02-22T20:15:24.192Z');
   });
 });

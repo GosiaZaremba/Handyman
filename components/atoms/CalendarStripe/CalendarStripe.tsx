@@ -42,6 +42,7 @@ const CalendarStripeWithReference: React.ForwardRefRenderFunction<
         dateNameStyle={styles.dateNameStyle}
         iconContainer={styles.iconContainer}
         startingDate={new Date()}
+        selectedDate={selectedDate}
         highlightDateNumberStyle={styles.highlightDateNumberStyle}
         highlightDateNumberContainerStyle={
           styles.highlightDateNumberContainerStyle
@@ -49,7 +50,7 @@ const CalendarStripeWithReference: React.ForwardRefRenderFunction<
         highlightDateNameStyle={styles.highlightDateNameStyle}
         dayContainerStyle={styles.dayContainerStyle}
         ref={dateReference}
-        onDateSelected={onDatePick}
+        onDateSelected={date => onDatePick(date)}
       />
     </View>
   );
