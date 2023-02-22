@@ -8,15 +8,15 @@ export default StyleSheet.create({
   header: {
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 50,
+    marginTop: '15%',
     marginHorizontal: 50,
   },
   listContainer: {
-    marginTop: 20,
+    marginTop: '10%',
     flex: 1,
   },
   listItem: {
-    marginHorizontal: 18,
-    marginBottom: 15,
+    marginHorizontal: '5%',
+    marginBottom: '5%',
   },
 });

@@ -6,6 +6,7 @@ export default StyleSheet.create({
     paddingVertical: 10,
   },
   header: {
+    marginTop: '15%',
     justifyContent: 'center',
     alignItems: 'center',
   },
