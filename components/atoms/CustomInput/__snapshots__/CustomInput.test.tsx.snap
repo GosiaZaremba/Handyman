@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Atom CustomInput Component Snapshot 1`] = `
+<View
+  style={
+    Object {
+      "width": "100%",
+    }
+  }
+>
+  <TextInput
+    onChangeText={[Function]}
+    placeholder=" "
+    secureTextEntry={false}
+    style={
+      Object {
+        "fontFamily": "OpenSans-Bold",
+      }
+    }
+    testID="atom-customInput"
+    value=""
+  />
+</View>
+`;

@@ -5,12 +5,16 @@ import styles from './CustomInput.styles';
 export type CustomInputReference = {
   getValue: () => string;
   focus: () => void;
-  isFocused: () => boolean | undefined;
+};
+
+export type Props = {
+  testID?: string;
 };
 
 const CustomInputWithReference: React.ForwardRefRenderFunction<
-  CustomInputReference
-> = ({}, ref) => {
+  CustomInputReference,
+  Props
+> = ({testID}, ref) => {
   const [value, setValue] = useState<string>('');
 
   const inputReference = useRef<TextInput>(null);
@@ -26,9 +30,6 @@ const CustomInputWithReference: React.ForwardRefRenderFunction<
     focus: () => {
       inputReference.current?.focus();
     },
-    isFocused: () => {
-      return inputReference.current?.isFocused();
-    },
   }));
 
   return (
@@ -40,6 +41,7 @@ const CustomInputWithReference: React.ForwardRefRenderFunction<
         value={value}
         style={styles.input}
         ref={inputReference}
+        testID={testID}
       />
     </View>
   );
