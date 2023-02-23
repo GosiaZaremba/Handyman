@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Atom CardWhite Component Snapshot 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "borderRadius": 15,
+      "elevation": 8,
+      "width": "100%",
+    }
+  }
+  testID="atom-cardWhite"
+>
+  <View />
+</View>
+`;

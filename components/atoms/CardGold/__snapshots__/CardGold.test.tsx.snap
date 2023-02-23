@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Atom CardGold Component Snapshot 1`] = `
+<BVLinearGradient
+  colors={
+    Array [
+      4294945379,
+      4294938123,
+    ]
+  }
+  endPoint={
+    Object {
+      "x": 0,
+      "y": 0.5,
+    }
+  }
+  locations={null}
+  startPoint={
+    Object {
+      "x": 1,
+      "y": 0.5,
+    }
+  }
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#ff8e0b",
+      "borderRadius": 5,
+      "height": "100%",
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+  testID="atom-cardGold"
+>
+  <View />
+</BVLinearGradient>
+`;

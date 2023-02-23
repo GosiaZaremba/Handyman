@@ -4,8 +4,13 @@ import styles from './CardGrey.styles';
 
 export type Props = {
   children?: ReactNode;
+  testID?: string;
 };
 
-export const CardGrey: React.FC<Props> = ({children}) => {
-  return <View style={styles.container}>{children}</View>;
+export const CardGrey: React.FC<Props> = ({children, testID}) => {
+  return (
+    <View style={styles.container} testID={testID}>
+      {children}
+    </View>
+  );
 };

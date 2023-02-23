@@ -4,8 +4,13 @@ import styles from './CardWhite.styles';
 
 export type Props = {
   children?: ReactNode;
+  testID?: string;
 };
 
-export const CardWhite: React.FC<Props> = ({children}) => {
-  return <View style={styles.container}>{children}</View>;
+export const CardWhite: React.FC<Props> = ({children, testID}) => {
+  return (
+    <View style={styles.container} testID={testID}>
+      {children}
+    </View>
+  );
 };
