@@ -10,7 +10,6 @@ export type Props = {
 export type CustomPasswordInputReference = {
   getValue: () => string;
   focus: () => void;
-  isFocused: () => boolean | undefined;
 };
 
 const CustomPasswordInputWithReference: React.ForwardRefRenderFunction<
@@ -34,9 +33,6 @@ const CustomPasswordInputWithReference: React.ForwardRefRenderFunction<
     focus: () => {
       inputReference.current?.focus();
     },
-    isFocused: () => {
-      return inputReference.current?.isFocused();
-    },
   }));
 
   const onPressIcon = () => {
@@ -55,8 +51,16 @@ const CustomPasswordInputWithReference: React.ForwardRefRenderFunction<
         ref={inputReference}
         testID={testID}
       />
-      <Pressable style={styles.pressable} onPress={onPressIcon} hitSlop={5}>
-        <Icon name={passwordIcon} style={styles.icon} />
+      <Pressable
+        style={styles.pressable}
+        onPress={onPressIcon}
+        hitSlop={5}
+        testID={`${testID}-pressable`}>
+        <Icon
+          name={passwordIcon}
+          style={styles.icon}
+          testID={`${testID}-icon`}
+        />
       </Pressable>
     </View>
   );
